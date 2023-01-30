@@ -78,10 +78,11 @@
                         </a>
                     </li>
                 </ul>
-
-                <h2 class="visually-hidden">
+            </section>
+            <section class="product-list">
+                <h1 class="visually-hidden">
                     Список товаров с фильтрами
-                </h2>
+                </h1>
 
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                     <fieldset class="catalog-filter-infrastructure">
@@ -131,23 +132,41 @@
                             </li>
                         </ul>
                     </fieldset>
-
-                    <input id="price_min" type="text" name="price_min" value="" class="catalog-filter-price" placeholder="от">
-                    <input id="price_max" type="text" name="price_max" value="" class="catalog-filter-price" placeholder="до">
-
+                <fieldset class="catalog-filter-price">
+                    <legend class="catalog-filter-pricetitle">Стоимость, ₽</legend>
+                    <div class="input-container"></div>
+                        <label class="input-containerlabel" for=""></label><label class="input-containerlabel" for=""></label>
+                        <input id="price_min" type="text" name="price_min" value="0" class="catalog-filter-pricerange" placeholder="от">
+                        <label class="input-containerlabel" for=""></label><label class="input-containerlabel" for=""></label>
+                        <input id="price_max" type="text" name="price_max" value="9000" class="catalog-filter-pricerange" placeholder="до">
+                    </div>
+                    <div class="range-block">
+                        <div class="scale">
+                            <div class="range"></div>
+                            <button>
+                                <span class="visually-hidden">Установить минимальную цену</span>
+                            </button>
+                            <button>
+                                <span class="visually-hidden">Установить максимальную цену</span>
+                            </button>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="catalog-filter-button">
+                    <legend class="visually-hidden">Кнопки</legend>
                     <button class="button button-add" type="submit">
                         Применить
                     </button>
-                    <button class="button button-delete" type="submit">
+                    <button class="button button-delete" type="reset">
                         Сбросить
                     </button>
+                </fieldset>
                 </form>
-
             </section>
 
             <section class="housing-list">
                 <h2 class="housing-list-title">
-                    Найдено гостиниц:
+                    Найдено гостиниц: 38
                 </h2>
                 <select class="select-control" aria-label="Сортировка">
                     <option value="cheap">
@@ -160,21 +179,29 @@
                         Сначала популярное
                     </option>
                 </select>
-                <a class="button" href="#">
-                    <span class="visually-hidden">
-                        Показать карточки
-                    </span>
-                </a>
-                <a class="button" href="#">
-                    <span class="visually-hidden">
-                        Показать по одной
-                    </span>
-                </a>
-                <a class="button button-light" href="#">
-                    <span class="visually-hidden">
-                        Показать список
-                    </span>
-                </a>
+                <ul class="viewcards-list">
+                    <li class="viewcards-item">
+                        <a class="button" href="#">
+                            <span class="visually-hidden">
+                                Показать карточки
+                            </span>
+                        </a>
+                    </li>
+                    <li class="viewcards-item">
+                        <a class="button" href="#">
+                            <span class="visually-hidden">
+                                Показать по одной
+                            </span>
+                        </a>
+                    </li>
+                    <li class="viewcards-item">
+                        <a class="button button-light" href="#">
+                            <span class="visually-hidden">
+                                Показать список
+                            </span>
+                        </a>
+                    </li>
+                </ul>
 
                 <ul class="product-list">
                     <li class="product-card">
@@ -195,7 +222,11 @@
                         <a class="button button-favourite" href="#">
                             В избранное
                         </a>
-                        <img class="product-card-starsrating" src="#" alt="4 звезды">
+                        <p class="stars stars-four">
+                            <span class="visually-hidden">
+                                Звездность гостиницы: 4 звезды
+                            </span>
+                        </p>
                         <span class="product-card-rating">
                             Рейтинг: 8,5
                         </span>
@@ -220,7 +251,11 @@
                         <a class="button button-favourite selected" href="#">
                             В избранном
                         </a>
-                        <img class="product-card-starsrating" src="#" alt="4 звезды">
+                        <p class="stars stars-four">
+                            <span class="visually-hidden">
+                                Звездность гостиницы: 4 звезды
+                            </span>
+                        </p>
                         <span class="product-card-rating">
                             Рейтинг: 9,2
                         </span>
@@ -245,7 +280,11 @@
                         <a class="button button-favourite" href="#">
                             В избранное
                         </a>
-                        <img class="product-card-starsrating" src="#" alt="3 звезды">
+                        <p class="stars stars-three">
+                            <span class="visually-hidden">
+                                Звездность гостиницы: 3 звезды
+                            </span>
+                        </p>
                         <span class="product-card-rating">
                             Рейтинг: 6,9
                         </span>
@@ -270,7 +309,11 @@
                         <a class="button button-favourite" href="#">
                             В избранное
                         </a>
-                        <img class="product-card-starsrating" src="#" alt="2 звезды">
+                        <p class="stars stars-two">
+                            <span class="visually-hidden">
+                                Звездность гостиницы: 2 звезды
+                            </span>
+                        </p>
                         <span class="product-card-rating">
                             Рейтинг: 5,0
                         </span>
