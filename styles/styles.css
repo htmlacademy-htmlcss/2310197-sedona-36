@@ -240,3 +240,129 @@ body {
 .footer-subscription-title-black, .footer-subscription-description-black  {
     color: #000000;
 }
+
+/* Catalog */
+.catalog-header {
+    color:#FFFFFF;
+    /* картинка не поместилась как надо, проверить */
+    background-image: url("../images/catalog/catalog-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.filter-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+}
+.breadcrumbs-item-main {
+    background-image: url("../images/catalog/main-icon.svg");
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+}
+
+.breadcrumbs-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.catalog-filter-title, .catalog-filter-pricetitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.control-input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.catalog-filter-pricerange {
+    color:#000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.housing-list-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: left;
+}
+.select-control {
+    color: #333333;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/*Здесь будут иконки для viewcards-item*/
+.product-card-link {
+    text-decoration: none;
+}
+.product-card-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+.product-card-housingtype {
+    color: #333333;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.product-card-price {
+    color: #333333;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.product-card-rating {
+    color: #333333;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.button {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.button-additional {
+    background-color: #756157;
+}
+
+.button-favourite {
+    background-color: #82B3D3;
+}
+
+.selected {
+    background-color: #7DB54F;
+}
+
+/* Pages*/
+.pagination-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-decoration: none;
+    color:#FFFFFF;
+    background-color: #82B3D3;
+}
+.pagination-current {
+    color:#000000;
+    background-color: #F2F2F2;
+}
