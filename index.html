@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>
       HTML Academy: Седона
     </title>
@@ -50,7 +51,7 @@
             </a>
           </li>
           <li class="navigation-useritem">
-            <a class="navigation-userlink" href="#">
+            <a class="navigation-userlink brown-button" href="#">
               Хочу сюда!
             </a>
           </li>
@@ -65,8 +66,9 @@
         </h2>
         <img class="welcome-img" src="images/main/welcome.svg" width="458" height="352" alt="Добро пожаловать в прекрасную Седону. Потому что Гранд Каньон-ерунда">
       </section>
+
       <section class="city-advantages">
-        <p class="city-advantages-title">
+        <p class="city-advantages-title main-city-advantages-title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </p>
         <p class="city-advantages-advantages">
@@ -76,16 +78,16 @@
           Преимущества города
         </h2>
         <ul class="city-advantages-list">
-          <li class="city-advantages-item">
-            <h3 class="city-advantages-title">
+          <li class="city-advantages-item city-advantages-list-blue">
+            <h3 class="city-advantages-title white-city-advantages-title">
               Настоящий городок
             </h3>
-            <p class="city-advantages-description">
+            <p class="city-advantages-description city-advantages-description-white">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
             <img class="nature" src="images/main/advantages-photo1.jpg" width="800" height="384" alt="Вид двухэтажного дома среди деревьев">
           </li>
-          <li class="city-advantages-item">
+          <li class="city-advantages-item city-advantages-item-lightblue">
             <h3 class="city-advantages-title">
               Небольшая площадь
             </h3>
@@ -93,7 +95,7 @@
               Все достопримечательности находятся очень близко
             </p>
           </li>
-          <li class="city-advantages-item">
+          <li class="city-advantages-item city-advantages-item-middleblue">
             <h3 class="city-advantages-title">
               Красивая дорога
             </h3>
@@ -101,7 +103,7 @@
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
-          <li class="city-advantages-item">
+          <li class="city-advantages-item city-advantages-item-lightblue">
             <h3 class="city-advantages-title">
               Мало туристов
             </h3>
@@ -109,12 +111,12 @@
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
-          <li class="city-advantages-item">
+          <li class="city-advantages-item city-advantages-item-blue">
             <img class="nature" src="images/main/advantages-photo2.jpg" width="800" height="385" alt="Вид на мост дьявола">
-            <h3 class="city-advantages-title">
+            <h3 class="city-advantages-title white-city-advantages-title">
               Там есть мост дьявола
             </h3>
-            <p class="city-advantages-description">
+            <p class="city-advantages-description city-advantages-description-white">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
           </li>
@@ -122,17 +124,17 @@
       </section>
 
       <section class="hotel-advantages">
-        <p class="hotel-advantages-title">
+        <p class="hotel-advantages-title main-hotel-advantages-title">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
         </p>
-        <p class="hotel-advantages-description">
+        <p class="hotel-advantages-advantages">
           Опытный персонал и качественное обслуживание!
         </p>
         <h2 class="visually-hidden">
           Преимущества гостиниц
         </h2>
         <ul class="hotel-advantages-list">
-          <li class="hotel-advantages-item">
+          <li class="hotel-advantages-item hotel-advantages-item-housing">
             <h3 class="hotel-advantages-title">
               Жилье
             </h3>
@@ -140,7 +142,7 @@
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
-          <li class="hotel-advantages-item">
+          <li class="hotel-advantages-item hotel-advantages-item-food">
             <h3 class="hotel-advantages-title">
               Еда
             </h3>
@@ -148,7 +150,7 @@
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
-          <li class="hotel-advantages-item">
+          <li class="hotel-advantages-item hotel-advantages-item-present">
             <h3 class="hotel-advantages-title">
               Сувениры
             </h3>
@@ -169,7 +171,7 @@
         <p class="searching-description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="searching-link" href="#">
+        <a class="searching-link brown-button" href="#">
           Поиск гостиницы в Седоне
         </a>
       </section>
@@ -177,19 +179,19 @@
     </main>
 
     <footer class="page-footer">
-      <section class="footer-subscription">
-        <h2 class="footer-subscription-title">
+      <section class="footer-subscription footer-subscription-image">
+        <h2 class="footer-subscription-title footer-subscription-title-white">
           Подпишитесь на рассылку
         </h2>
-        <p class="footer-subscription-description">
+        <p class="footer-subscription-description footer-subscription-description-white">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="footer-subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="footer-subscription-email">
+          <label for="visually-hidden">
             Ваш e-mail
           </label>
-          <input class="field" placeholder="email@example.com" type="email" name="footer-subscription-email" id="footer-subscription-email" required>
-          <button class="button footer-subscription-button" type="submit">
+          <input class="field" placeholder="Ваш e-mail" type="email" name="footer-subscription-email" id="footer-subscription-email" required>
+          <button class="blue-button footer-subscription-button" type="submit">
             Подписаться
           </button>
         </form>
@@ -198,21 +200,21 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Ссылки на социальные сети</h2>
         <ul class="footer-social-list">
-          <li class="footer-social-item">
+          <li class="footer-social-item footer-social-item-vk">
             <a class="button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">
                 Наша страница Vkontakte
               </span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="footer-social-item footer-social-item-telegram">
             <a class="button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">
                 Наш канал Telegram
               </span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="footer-social-item footer-social-item-youtube">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">
                 Наш канал YouTube
