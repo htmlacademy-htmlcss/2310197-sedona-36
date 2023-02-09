@@ -27,8 +27,9 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
 }
+
 
 /* Header */
 .page-header {
@@ -36,6 +37,24 @@ body {
   background-color: #FFFFFF;
 }
 
+.navigation {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 339px;
+}
+
+.navigation-user {
+  margin: 0;
+  padding: 0;
+  width: 268px;
+  margin-left: auto;
+}
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
