@@ -82,10 +82,36 @@ body {
   background-color: #FFFFFF;
 }
 
+.page-container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .welcome {
   background-image: url("../images/main/welcome-background.jpg");
   background-size:100% auto;
   background-repeat: no-repeat;
+}
+.welcome-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.city-advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.hotel-advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 81px 85px;
+  text-align: center;
 }
 
 /* Title */
@@ -116,7 +142,7 @@ body {
   color: #FFFFFF;
 }
 
-.city-advantages-item-city {
+.city-advantages-item-city, .city-advantages-item-bridge {
   background-color: #82B3D3;
 }
 .city-advantages-item-square, .city-advantages-item-tourists {
@@ -126,6 +152,13 @@ body {
   background-color: #83B3D333;
 }
 
+/*
+.city-advantages-item-square, .city-advantages-item-road, .city-advantages-item-tourists {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+*/
 .city-advantages-advantages, .hotel-advantages-advantages, .searching-description {
   font-weight: 400;
   font-size: 22px;
@@ -151,6 +184,7 @@ body {
   width: 75px;
   height: 72px;
   background-repeat: no-repeat;
+  background-color: #83B3D31F;
 }
 .hotel-advantages-item-food {
   background-image: url("../images/main/food.svg");
@@ -163,6 +197,12 @@ body {
   width: 64px;
   height: 76px;
   background-repeat: no-repeat;
+  background-color: #83B3D31F;
+}
+
+.searching {
+  width: 592px;
+  text-align: center;
 }
 
 /* Button */
@@ -187,13 +227,20 @@ body {
 }
 
 /* Footer */
-
 .page-footer {
   font-size: 14px;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
 }
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
 .footer-subscription-image {
   background-image: url("../images/subscribe-background.jpg");
   background-size: 100% auto;
@@ -246,6 +293,17 @@ body {
 }
 
 /* Social link */
+.footer-social {
+  display: flex;
+justify-content: space-between;
+}
+.footer-social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 142px;
+}
+
 .footer-social-item-vk {
   background-image: url("../images/social-icon/vk.svg");
   width: 24px;
@@ -271,8 +329,11 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+  width: 331px;
 }
-
+.htmlacademy-link{
+  width: 115px;
+}
 /* Catalog footer*/
 .footer-subscription-title-black, .footer-subscription-description-black  {
   color: #000000;
@@ -403,3 +464,18 @@ body {
     color:#000000;
     background-color: #F2F2F2;
 }
+
+/*
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
