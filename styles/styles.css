@@ -295,7 +295,9 @@ body {
 /* Social link */
 .footer-social {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1060px;
 }
 .footer-social-list {
   display: flex;
@@ -329,7 +331,7 @@ justify-content: space-between;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
-  width: 331px;
+  width: 720px;
 }
 .htmlacademy-link{
   width: 115px;
@@ -339,19 +341,30 @@ justify-content: space-between;
   color: #000000;
 }
 
+
+
+
 /* Catalog */
 .catalog-header {
   color:#FFFFFF;
-  /* картинка не поместилась как надо, проверить */
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.filter {
+  width: 1200px;
 }
 
 .filter-title {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
+}
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 .breadcrumbs-item-main {
     background-image: url("../images/catalog/main-icon.svg");
@@ -366,6 +379,18 @@ justify-content: space-between;
     line-height: 21px;
 }
 
+.catalog-filter {
+  width: 1060px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-infrastructure, .catalog-filter-housingtype {
+  width: 150px;
+}
+
 .catalog-filter-title, .catalog-filter-pricetitle {
     font-weight: 700;
     font-size: 20px;
@@ -378,11 +403,29 @@ justify-content: space-between;
     line-height: 23px;
 }
 
+.catalog-filter-price {
+  width: 288px;
+}
+
 .catalog-filter-pricerange {
     color:#000000;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
+}
+
+.catalog-right-column {
+
+}
+
+.housing-list {
+  width: 1060px;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .housing-list-title {
@@ -398,6 +441,10 @@ justify-content: space-between;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+}
+
+.catalog-filter-button {
+  width: 191px;
 }
 
 /*Здесь будут иконки для viewcards-item*/
@@ -452,6 +499,12 @@ justify-content: space-between;
 }
 
 /* Pages*/
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}
 .pagination-link {
     font-weight: 700;
     font-size: 20px;
@@ -465,7 +518,7 @@ justify-content: space-between;
     background-color: #F2F2F2;
 }
 
-/*
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -478,4 +531,3 @@ justify-content: space-between;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-*/
