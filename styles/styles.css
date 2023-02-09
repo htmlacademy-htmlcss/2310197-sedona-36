@@ -80,13 +80,13 @@ body {
     color: #FFFFFF;
 }
 
-.city-advantages-item-blue {
+.city-advantages-item-city {
     background-color: #82B3D3;
 }
-.city-advantages-item-lightblue {
+.city-advantages-item-square, .city-advantages-item-tourists {
     background-color: #83B3D31F;
 }
-.city-advantages-item-middleblue {
+.city-advantages-item-road {
     background-color: #83B3D333;
 }
 
