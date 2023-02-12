@@ -98,6 +98,38 @@ border-bottom: 1px solid #000000;
   text-align: center;
 }
 
+.navigation-userlink-searching {
+  background-image: url("../images/search.svg");
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  padding: 22px 11px;
+}
+
+.navigation-userlink-favourite {
+  background-image: url("../images/favourite.svg");
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  padding: 22px 11px;
+}
+
+.favourite-number {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  background: #7DB54F;
+  border-radius: 50%;
+  padding: 4px;
+  width: 20px;
+  height: 20px;
+}
+
 .userlink-button {
   font-family: inherit;
   text-align: center;
@@ -110,14 +142,7 @@ border-bottom: 1px solid #000000;
   padding: 9px 35px;
 }
 
-.favourite-number {
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 10px;
-  color: #FFFFFF;
-  text-align: Center;
-  text-decoration: none;
-}
+
 
 /*Main-page*/
 .main-container {
@@ -563,12 +588,45 @@ border-bottom: 1px solid #000000;
   list-style-type: none;
 }
 
-.viewcards-item {
-  width: 48px;
-  height: 48px;
-}
-/*Здесь будут иконки для viewcards-item*/
 
+/*viewcards-item
+добавить бордеры*/
+
+.viewcards-item-cards {
+  background-image: url("../images/catalog/cards.svg");
+  width: 16px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 17px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.viewcards-item-one {
+  background-image: url("../images/catalog/one-card.svg");
+  width: 16px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 17px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.viewcards-item-list {
+  background-image: url("../images/catalog/list.svg");
+  width: 16px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 17px;
+  border: 2px solid #E6E6E6;
+}
+
+.viewcards-item-current {
+  border: 2px solid #000000;
+}
 .product-list {
   display: flex;
   flex-wrap: wrap;
