@@ -435,21 +435,13 @@ border-bottom: 1px solid #000000;
 }
 
 /*product-list*/
-.product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
 
 .catalog-filter {
   width: 1060px;
   display: flex;
   justify-content: space-between;
-  margin: 17px 0 71px 67px;
-  padding: 0;
+  margin: 17px 0 57px 67px;
+  padding: 0 0 71px 0;
 }
 
 .catalog-filter-infrastructure {
@@ -531,15 +523,17 @@ border-bottom: 1px solid #000000;
 /*housing-list*/
 .housing-list {
   width: 1060px;
-  margin: 0;
+  margin: 55px 0 0 20px;
   padding: 0;
 }
+
 .housing-list-sorting {
   display: flex;
   justify-content: space-around;
-  margin: 0;
-  /*gap: 15px;*/
+  margin: 0 0 34px 0;
+  padding: 0;
 }
+
 .housing-list-title {
   font-weight: 700;
   font-size: 30px;
@@ -575,20 +569,45 @@ border-bottom: 1px solid #000000;
 }
 /*Здесь будут иконки для viewcards-item*/
 
-.product-card {
-  width: 340px;
-  margin: 0;
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 0 80px 40px;
   padding: 0;
+  list-style-type: none;
+  width: 1060px;
+}
+
+.product-card {
+  box-sizing:border-box;
+  width: 340px;
+  margin: 0 20px 20px 0;
+  padding: 20px;
   background-color: #E6E6E6;
 }
 
+.product-card:nth-child(3n) {
+  margin: 0;
+}
+
+.housingtype-price, .housingtype-button, .housingtype-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 16px 0;
+  padding: 0;
+  width: 300px;
+}
 
 .product-card-link {
   text-decoration: none;
+  width: 300px;
 }
 
 .product-card-image {
-  /*выровнять по горизонтали*/
+  display: block;
+  margin: 0 auto;
 }
 
 .product-card-title {
@@ -596,7 +615,7 @@ border-bottom: 1px solid #000000;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  margin: 0;
+  margin: 16px 0 16px 0;
   padding: 0;
 }
 
@@ -653,14 +672,20 @@ border-bottom: 1px solid #000000;
 
 .button-additional {
   background-color: #756157;
+  padding: 8px 25px;
+  border-radius: 4px;
 }
 
 .button-favourite {
   background-color: #82B3D3;
+  padding: 8px 25px;
+  border-radius: 4px;
 }
 
 .selected {
   background-color: #7DB54F;
+  padding: 8px 25px;
+  border-radius: 4px;
 }
 
 /* Pages*/
