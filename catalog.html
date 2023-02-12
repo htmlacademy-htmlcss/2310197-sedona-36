@@ -10,58 +10,57 @@
     </head>
 
     <body>
-      <header class="page-header">
-        <nav class="navigation">
-          <a class="link-main-page" href="#">
-            <img class="logo" src="images/logo.svg" width="140" height="70" alt="Фавикон-логотип Седона">
-          </a>
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                Главная
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                О Седоне
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">
-                Гостиницы
-              </a>
-            </li>
-          </ul>
-          <ul class="navigation-user">
-            <li class="navigation-useritem">
-              <a class="navigation-userlink" href="#">
-                <span class="visually-hidden">
-                  Поиск
-                </span>
-              </a>
-            </li>
-            <li class="navigation-useritem">
-              <a class="navigation-userlink" href="#">
-                <span class="visually-hidden">
-                  Избранное
-                </span>
-                <span class="favourite-number">
-                  12
-                </span>
-              </a>
-            </li>
-            <li class="navigation-useritem">
-              <a class="navigation-userlink brown-button" href="#">
-                Хочу сюда!
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <div class="page-container">
+        <header class="page-header">
+          <nav class="navigation">
+            <a class="link-main-page" href="#">
+              <img class="logo" src="images/logo.svg" width="140" height="70" alt="Фавикон-логотип Седона">
+            </a>
+            <ul class="navigation-list">
+              <li class="navigation-item navigation-item-current">
+                <a class="navigation-link" href="#">
+                  Главная
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">
+                  О Седоне
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="catalog.html">
+                  Гостиницы
+                </a>
+              </li>
+            </ul>
+            <ul class="navigation-user">
+              <li class="navigation-useritem">
+                <a class="navigation-userlink navigation-userlink-searching" href="#">
+                  <span class="visually-hidden">
+                    Поиск
+                  </span>
+                </a>
+              </li>
+              <li class="navigation-useritem navigation-useritem-favourite">
+                <a class="navigation-userlink navigation-userlink-favourite" href="#">
+                  <span class="visually-hidden">
+                    Избранное
+                  </span>
+                  <span class="favourite-number">
+                    12
+                  </span>
+                </a>
+              </li>
+              <li class="navigation-useritem">
+                <a class="navigation-userlink userlink-button" href="#">
+                  Хочу сюда!
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
 
         <main class="main-inner main-container">
-          <div class="page-container">
-
             <div class="catalog-header">
               <section class="filter">
                 <h1 class="filter-title">
@@ -82,7 +81,7 @@
                   </li>
                 </ul>
               </section>
-              <section class="product-list">
+              <section class="catalog-sorting">
                 <h1 class="visually-hidden">
                   Список товаров с фильтрами
                 </h1>
@@ -143,6 +142,7 @@
                         for="price_min"></label>
                       <input id="price_min" type="text" name="price_min" value="0" class="catalog-filter-pricerange"
                         placeholder="от">
+
                       <label class="input-containerlabel" for="price_max"></label><label class="input-containerlabel"
                         for="price_max"></label>
                       <input id="price_max" type="text" name="price_max" value="9000" class="catalog-filter-pricerange"
@@ -160,12 +160,13 @@
                       </div>
                     </div>
                   </fieldset>
+
                   <fieldset class="catalog-filter-button">
                     <legend class="visually-hidden">Кнопки</legend>
-                    <button class="blue-button button-add button" type="submit">
+                    <button class="blue-button button-add" type="submit">
                       Применить
                     </button>
-                    <button class="button button-delete button" type="reset">
+                    <button class="button-delete" type="reset">
                       Сбросить
                     </button>
                   </fieldset>
@@ -175,6 +176,7 @@
 
           <div class="catalog-right-column">
             <section class="housing-list">
+              <div class="housing-list-sorting">
                 <h2 class="housing-list-title">
                     Найдено гостиниц: 38
                 </h2>
@@ -190,21 +192,21 @@
                     </option>
                 </select>
                 <ul class="viewcards-list">
-                    <li class="viewcards-item">
+                    <li class="viewcards-item-cards viewcards-item-current">
                         <a class="button" href="#">
                             <span class="visually-hidden">
                                 Показать карточки
                             </span>
                         </a>
                     </li>
-                    <li class="viewcards-item">
+                    <li class="viewcards-item-one">
                         <a class="button" href="#">
                             <span class="visually-hidden">
                                 Показать по одной
                             </span>
                         </a>
                     </li>
-                    <li class="viewcards-item">
+                    <li class="viewcards-item-list">
                         <a class="button button-light" href="#">
                             <span class="visually-hidden">
                                 Показать список
@@ -212,9 +214,10 @@
                         </a>
                     </li>
                 </ul>
-
+              </div>
                 <ul class="product-list">
                     <li class="product-card">
+
                         <a class="product-card-link" href="#">
                             <img class="product-card-image" src="images/catalog/amara-resort-spa.jpg" width="300"
                                 height="212" alt="Звездное небо и горы, отель Amara Resort & Spa">
@@ -222,17 +225,26 @@
                                 Amara Resort & Spa
                             </h3>
                         </a>
+                        <div class="housingtype-price">
+
                         <span class="product-card-housingtype">
                             Гостиница
                         </span>
                         <span class="product-card-price">
-                            От 4000 ₽</span>
+                            От 4000 ₽
+                        </span>
+                        </div>
+
+                        <div class="housingtype-button">
                         <a class="button button-additional" href="#">
                             Подробнее
                         </a>
                         <a class="button button-favourite" href="#">
                             В избранное
                         </a>
+                      </div>
+
+                      <div class="housingtype-rating">
                         <p class="stars stars-four">
                             <span class="visually-hidden">
                                 Звездность гостиницы: 4 звезды
@@ -241,6 +253,7 @@
                         <span class="product-card-rating">
                             Рейтинг: 8,5
                         </span>
+                      </div>
                     </li>
 
                     <li class="product-card">
@@ -251,26 +264,35 @@
                                 Villas at Poco Diablo
                             </h3>
                         </a>
-                        <span class="product-card-housingtype">
-                            Гостиница
-                        </span>
-                        <span class="product-card-price">
-                            От 5000 ₽
-                        </span>
-                        <a class="button button-additional" href="#">
-                            Подробнее
-                        </a>
-                        <a class="button button-favourite selected" href="#">
-                            В избранном
-                        </a>
-                        <p class="stars stars-four">
-                            <span class="visually-hidden">
-                                Звездность гостиницы: 4 звезды
-                            </span>
-                        </p>
-                        <span class="product-card-rating">
-                            Рейтинг: 9,2
-                        </span>
+                        <div class="housingtype-price">
+
+                          <span class="product-card-housingtype">
+                              Гостиница
+                          </span>
+                          <span class="product-card-price">
+                              От 5000 ₽
+                          </span>
+                          </div>
+
+                          <div class="housingtype-button">
+                          <a class="button button-additional" href="#">
+                              Подробнее
+                          </a>
+                          <a class="button button-favourite" href="#">
+                              В избранное
+                          </a>
+                        </div>
+
+                        <div class="housingtype-rating">
+                          <p class="stars stars-four">
+                              <span class="visually-hidden">
+                                  Звездность гостиницы: 4 звезды
+                              </span>
+                          </p>
+                          <span class="product-card-rating">
+                              Рейтинг: 9,2
+                          </span>
+                        </div>
                     </li>
 
                     <li class="product-card">
@@ -281,26 +303,35 @@
                                 Desert Quail Inn
                             </h3>
                         </a>
-                        <span class="product-card-housingtype">
-                            Гостиница
-                        </span>
-                        <span class="product-card-price">
-                            От 2500 ₽
-                        </span>
-                        <a class="button button-additional" href="#">
-                            Подробнее
-                        </a>
-                        <a class="button button-favourite" href="#">
-                            В избранное
-                        </a>
-                        <p class="stars stars-three">
-                            <span class="visually-hidden">
-                                Звездность гостиницы: 3 звезды
-                            </span>
-                        </p>
-                        <span class="product-card-rating">
-                            Рейтинг: 6,9
-                        </span>
+                        <div class="housingtype-price">
+
+                          <span class="product-card-housingtype">
+                              Гостиница
+                          </span>
+                          <span class="product-card-price">
+                              От 2500 ₽
+                          </span>
+                          </div>
+
+                          <div class="housingtype-button">
+                          <a class="button button-additional" href="#">
+                              Подробнее
+                          </a>
+                          <a class="button button-favourite" href="#">
+                              В избранное
+                          </a>
+                        </div>
+
+                        <div class="housingtype-rating">
+                          <p class="stars stars-four">
+                              <span class="visually-hidden">
+                                  Звездность гостиницы: 3 звезды
+                              </span>
+                          </p>
+                          <span class="product-card-rating">
+                              Рейтинг: 6,9
+                          </span>
+                        </div>
                     </li>
 
                     <li class="product-card">
@@ -311,26 +342,35 @@
                                 GreenTree Inn
                             </h3>
                         </a>
-                        <span class="product-card-housingtype">
-                            Гостиница
-                        </span>
-                        <span class="product-card-price">
-                            От 1500 ₽
-                        </span>
-                        <a class="button button-additional" href="#">
-                            Подробнее
-                        </a>
-                        <a class="button button-favourite" href="#">
-                            В избранное
-                        </a>
-                        <p class="stars stars-two">
-                            <span class="visually-hidden">
-                                Звездность гостиницы: 2 звезды
-                            </span>
-                        </p>
-                        <span class="product-card-rating">
-                            Рейтинг: 5,0
-                        </span>
+                      <div>
+                        <div class="housingtype-price">
+                          <span class="product-card-housingtype">
+                              Гостиница
+                          </span>
+                          <span class="product-card-price">
+                              От 1500 ₽
+                          </span>
+                          </div>
+
+                          <div class="housingtype-button">
+                          <a class="button button-additional" href="#">
+                              Подробнее
+                          </a>
+                          <a class="button button-favourite" href="#">
+                              В избранное
+                          </a>
+                        </div>
+
+                        <div class="housingtype-rating">
+                          <p class="stars stars-four">
+                              <span class="visually-hidden">
+                                  Звездность гостиницы: 2 звезды
+                              </span>
+                          </p>
+                          <span class="product-card-rating">
+                              Рейтинг: 5,0
+                          </span>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -339,7 +379,7 @@
                 <h2 class="visually-hidden">Список страниц</h2>
                 <ul class="pagination">
                     <li class="pagination-item">
-                        <a class="pagination-link pagination-prev pagination-disabled">
+                        <a class="pagination-prev pagination-disabled">
                             <span class="visually-hidden">
                                 Предыдущая страница
                             </span>
@@ -375,7 +415,7 @@
                             10
                         </a>
                     <li class="pagination-item">
-                        <a class="pagination-link pagination-next" href="#">
+                        <a class="pagination-next" href="#">
                             <span class="visually-hidden">
                                 Следующая страница
                             </span>
@@ -385,7 +425,7 @@
             </section>
           </div>
 
-          </div>
+
         </main>
 
         <footer class="page-footer">
@@ -412,22 +452,22 @@
               <h2 class="visually-hidden">Ссылки на социальные сети</h2>
 
               <ul class="footer-social-list">
-                <li class="footer-social-item footer-social-item-vk">
-                  <a class="button" href="https://vk.com/htmlacademy">
+                <li class="footer-social-item">
+                  <a class="footer-social-item-vk" href="https://vk.com/htmlacademy">
                     <span class="visually-hidden">
                       Наша страница Vkontakte
                     </span>
                   </a>
                 </li>
-                <li class="footer-social-item footer-social-item-telegram">
-                  <a class="button" href="https://t.me/htmlacademy">
+                <li class="footer-social-item">
+                  <a class="footer-social-item-telegram" href="https://t.me/htmlacademy">
                     <span class="visually-hidden">
                       Наш канал Telegram
                     </span>
                   </a>
                 </li>
-                <li class="footer-social-item footer-social-item-youtube">
-                  <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                <li class="footer-social-item">
+                  <a class="footer-social-item-youtube" href="https://www.youtube.com/user/htmlacademyru">
                     <span class="visually-hidden">
                       Наш канал YouTube
                     </span>
@@ -445,6 +485,7 @@
             </section>
           </div>
         </footer>
+      </div>
     </body>
 
 </html>
