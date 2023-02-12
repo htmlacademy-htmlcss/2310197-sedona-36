@@ -39,8 +39,13 @@ body {
 }
 
 /* Header */
-.page-header {}
-
+.page-header {
+  position: relative;
+}
+.link-main-page {
+  position: absolute;
+  margin: 0 0 0 70px;
+}
 .navigation {
   display: flex;
   margin: 0 auto;
@@ -50,18 +55,21 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: space-between;*/
-  margin: 0;
+  justify-content: space-between;
+  margin: 0 0 0 210px;
   padding: 0;
   list-style-type: none;
   align-items: center;
 }
 
+.navigation-item-current {
+border-bottom: 1px solid #000000;
+}
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 78px 0 0;
   padding: 0;
   margin-left: auto;
   list-style-type: none;
@@ -71,7 +79,7 @@ body {
 
 .navigation-link {
   display: block;
-  padding: 8px 30px;
+  padding: 20px 22px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -82,7 +90,6 @@ body {
 
 .navigation-userlink {
   display: block;
-  padding: 20px 18px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -91,12 +98,25 @@ body {
   text-align: center;
 }
 
+.userlink-button {
+  font-family: inherit;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  border-color: #756157;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 9px 35px;
+}
+
 .favourite-number {
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
   color: #FFFFFF;
   text-align: Center;
+  text-decoration: none;
 }
 
 /*Main-page*/
@@ -367,33 +387,34 @@ body {
   text-transform: uppercase;
 }
 
-
 /* Catalog */
 
 /* Catalog-header */
 .catalog-header {
+  width: 1200px;
   color: #FFFFFF;
   background-image: url("../images/catalog/catalog-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center 0;
 }
 
 .filter {
-  width: 1200px;
-  margin-top: 35px;
-  margin-right: 70px;
-  margin-left: 70px;
+  width: 1060px;
+  padding: 37px 0 21px 68px;
 }
 
 .filter-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs {
   display: flex;
-  margin: 0;
+  margin: 4px 0 0 2px;
   padding: 0;
 }
 
@@ -401,47 +422,77 @@ body {
   background-image: url("../images/catalog/main-icon.svg");
   width: 12px;
   height: 12px;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .breadcrumbs-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  list-style-type: none;
 }
 
 /*product-list*/
 .product-list {
-  margin-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .catalog-filter {
   width: 1060px;
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin: 17px 0 71px 67px;
   padding: 0;
 }
 
-.catalog-filter-infrastructure,
-.catalog-filter-housingtype {
-  width: 150px;
+.catalog-filter-infrastructure {
+  width: 155px;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
-.catalog-filter-title,
+.catalog-filter-housingtype {
+  width: 155px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 16px 0;
+}
+
 .catalog-filter-pricetitle {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  margin: 0;
+  margin: 0 0 32px 0;
 }
 
 .catalog-filter-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
 }
 
+.catalog-filter-item {
+  margin: 0;
+  padding: 16px 0 0 0;
+}
 
 .control-input {
   font-weight: 400;
@@ -450,25 +501,45 @@ body {
 }
 
 .catalog-filter-price {
-  width: 288px;
+  width: 226px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-container {
+  display: flex;
 }
 
 .catalog-filter-pricerange {
+  width: 113px;
   color: #000000;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  margin: 0 0 36px 0;
+  padding: 8px 0 8px 20px;
 }
 
 .catalog-filter-button {
+  margin: 56px 0 0 0;
+  padding: 0;
   width: 191px;
+  border: none;
 }
 
 /*housing-list*/
 .housing-list {
   width: 1060px;
+  margin: 0;
+  padding: 0;
 }
-
+.housing-list-sorting {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  /*gap: 15px;*/
+}
 .housing-list-title {
   font-weight: 700;
   font-size: 30px;
@@ -477,6 +548,7 @@ body {
   text-transform: uppercase;
   text-align: left;
   margin: 0;
+  padding: 0;
 }
 
 .select-control {
@@ -484,40 +556,32 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-}
-
-.product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  width: 292px;
   margin: 0;
-  padding: 40px 70px;
-  list-style-type: none;
+  padding: 0;
 }
 
 
 .viewcards-list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+.viewcards-item {
+  width: 48px;
+  height: 48px;
+}
 /*Здесь будут иконки для viewcards-item*/
-
-
-
 
 .product-card {
   width: 340px;
-  padding: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
   background-color: #E6E6E6;
 }
 
-.product-card:nth-child(3n) {
-  margin-right: 0;
-}
 
 .product-card-link {
   text-decoration: none;
@@ -533,6 +597,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   margin: 0;
+  padding: 0;
 }
 
 .product-card-housingtype {
@@ -554,6 +619,28 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+.button-add {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 8px 50px;
+  margin-bottom: 32px;
+}
+
+.button-delete {
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 8px 50px;
+  background-color: rgba(28,28,28,0);
+  border: rgba(28,28,28,0);
 }
 
 .button {
@@ -583,7 +670,6 @@ body {
   padding: 0;
   width: 400px;
   list-style-type: none;
-  margin-bottom: 60px;
 }
 
 .pagination-link {
