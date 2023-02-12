@@ -445,7 +445,8 @@ body {
 
 .breadcrumbs {
   display: flex;
-  margin: 4px 0 0 2px;
+  flex-wrap: wrap;
+  margin: 0;
   padding: 0;
 }
 
@@ -463,8 +464,13 @@ body {
   font-size: 16px;
   line-height: 21px;
   list-style-type: none;
+  margin-right: 30px;
 }
 
+.breadcrumbs-link {
+  color: inherit;
+
+}
 /*product-list*/
 
 .catalog-filter {
@@ -561,8 +567,8 @@ body {
 .housing-list-sorting {
   display: flex;
   justify-content: space-around;
-  margin: 0 0 34px 0;
-  padding: 0;
+  margin: 0 0 40px 0;
+  padding: 6px 0;
 }
 
 .housing-list-title {
