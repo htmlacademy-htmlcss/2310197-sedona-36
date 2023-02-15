@@ -196,6 +196,12 @@ body {
 }
 
 .main-city-advantages-title {
+  padding: 0;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 109px auto 60px;
   font-size: 30px;
   line-height: 36px;
   width: 646px;
@@ -229,6 +235,8 @@ body {
 .city-advantages-item-city,
 .city-advantages-item-bridge {
   background-color: #82B3D3;
+  display: flex;
+  justify-content: space-between;
 }
 
 .city-advantages-item-square,
@@ -239,18 +247,6 @@ body {
 .city-advantages-item-road {
   background-color: #83B3D333;
 }
-
-.city-advantages-item-city {
-  display: flex;
-  justify-content: space-between;
-}
-
-.city-advantages-item-bridge {
-  display: flex;
-  justify-content: space-between;
-}
-
-
 
 .city-advantages-titledescription {
   order: 1;
@@ -870,7 +866,7 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #82B3D3;
-  border-color: #82B3D3;
+  border: none;
   text-decoration: none;
   text-transform: uppercase;
 }
