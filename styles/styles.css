@@ -59,6 +59,7 @@ body {
   padding: 0;
   list-style-type: none;
   align-items: center;
+  width: 380px;
 }
 
 .navigation-item-current {
@@ -272,7 +273,6 @@ body {
 .hotel-advantages-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -636,10 +636,15 @@ body {
   border: 2px solid #000000;
 }
 .product-list {
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 0 0 63px 40px;
+  margin: 0 0 63px 40px;*/
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+  margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   list-style-type: none;
   width: 1060px;
@@ -647,14 +652,18 @@ body {
 
 .product-card {
   box-sizing:border-box;
-  width: 340px;
+  /*width: 340px;
   margin: 0 20px 20px 0;
-  padding: 20px;
+  padding: 20px;*/
   background-color: #E6E6E6;
 }
+
+/*
 .product-card:nth-child(3n) {
   margin: 0 0 20px 0;
 }
+*/
+
 .housingtype-price, .housingtype-button {
   display: flex;
   justify-content: space-between;
