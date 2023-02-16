@@ -556,13 +556,12 @@ body {
 /*housing-list*/
 .housing-list {
   width: 1060px;
-  margin: 55px 0 0 20px;
+  margin: 55px 0 0 70px;
   padding: 0;
 }
 
 .housing-list-sorting {
   display: flex;
-  justify-content: space-around;
   margin: 0 0 40px 0;
   padding: 6px 0;
 }
@@ -574,10 +573,14 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-align: left;
-  margin: 0;
+  margin: 0 200px 0 0;
   padding: 0;
 }
 
+.housing-list-viewfilter {
+  display: flex;
+  gap: 70px;
+}
 .select-control {
   color: #333333;
   font-weight: 400;
@@ -652,9 +655,8 @@ body {
 
 .product-card {
   box-sizing:border-box;
-  /*width: 340px;
-  margin: 0 20px 20px 0;
-  padding: 20px;*/
+  margin: 0;
+  padding: 20px;
   background-color: #E6E6E6;
 }
 
