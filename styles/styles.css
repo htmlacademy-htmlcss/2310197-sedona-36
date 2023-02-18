@@ -50,7 +50,7 @@ body {
   display: flex;
   margin: 0 auto;
 }
-
+/*Навигация по сайту*/
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -66,6 +66,7 @@ body {
   border-bottom: 2px solid #756257;
 }
 
+/*Навигация пользовательская*/
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
@@ -162,7 +163,7 @@ body {
   color: #000000;
   background-color: #FFFFFF;
 }
-
+/*Приветственный блок*/
 .welcome {
   background-color: #7c97a8;
   background-image: url("../images/main/welcome-background.jpg");
@@ -184,38 +185,39 @@ body {
 }
 */
 
-/*city-advantages*/
-.city-advantages {
+/*Преимущества города*/
+.advantages {
   margin-bottom: 63px;
   padding-top: 69px;
 }
 
-.city-advantages-title {
-  padding: 0;
-  width: 171px;
+.advantages-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
-  text-align: center;
-  margin: 109px auto 60px;
 }
 
-.main-city-advantages-title {
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.main-advantages-title {
   padding: 0;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
-  margin: 109px auto 60px;
   font-size: 30px;
   line-height: 36px;
   width: 646px;
   margin: 0 auto 25px;
 }
 
-.city-advantages-advantages {
+.advantages-city {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -224,58 +226,48 @@ body {
   margin: 0 0 90px 0;
 }
 
-.city-advantages-list {
+.advantages-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.advantages-item-container {
+  width: 230px;
+  min-height: 200px;
+  padding: 80px 85px;
   text-align: center;
-  list-style-type: none;
 }
 
-.white-city-advantages-title {
-  color: #FFFFFF;
-}
-
-
-.city-advantages-item-city,
-.city-advantages-item-bridge {
-  background-color: #82B3D3;
+.advantages-item-city {
   display: flex;
-  justify-content: space-between;
 }
 
-.city-advantages-item-square,
-.city-advantages-item-tourists {
+.advantages-item-bridge {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.advantages-item-city,
+.advantages-item-bridge {
+  background-color: #82B3D3;
+}
+
+.advantages-item-square,
+.advantages-item-tourists {
   background-color: #83B3D31F;
 }
 
-.city-advantages-item-road {
+.advantages-item-road {
   background-color: #83B3D333;
 }
 
-.city-advantages-titledescription {
-  order: 1;
-}
-
-.city-advantages-description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-  text-align: center;
-  margin: 0 85px 100px 85px;
-  width: 230px;
-  padding: 0;
-}
-
-.city-advantages-description-white {
+.advantages-description-white, .white-advantages-title {
   color: #FFFFFF;
 }
-
-/*hotel-advantages*/
-
+/*Преимущества отелей*/
 .hotel-advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -370,7 +362,7 @@ body {
   padding-top: 77px;
 }
 
-/*searching*/
+/*Поиск гостиницы*/
 .searching {
   width: 592px;
   text-align: center;
@@ -401,7 +393,6 @@ body {
 }
 
 /* Buttons */
-
 .searching-link {
   font-weight: 700;
   font-size: 20px;
@@ -421,7 +412,7 @@ body {
 
 /* Catalog */
 
-/* Catalog-header */
+/* Внутренняя навигация */
 .catalog-header {
   width: 1200px;
   color: #FFFFFF;
@@ -470,10 +461,9 @@ body {
 
 .breadcrumbs-link {
   color: inherit;
-
 }
-/*product-list*/
 
+/*Фильтрация*/
 .catalog-filter {
   width: 1060px;
   display: flex;
@@ -558,7 +548,7 @@ body {
   border: none;
 }
 
-/*housing-list*/
+/*Список гостиниц*/
 .housing-list {
   width: 1060px;
   margin: 55px 0 0 70px;
@@ -729,6 +719,8 @@ body {
   line-height: 20px;
   text-transform: uppercase;
 }
+
+/*Кнопки каталог*/
 .button-add {
   color: #FFFFFF;
   font-weight: 700;
@@ -778,7 +770,7 @@ body {
   border-radius: 4px;
 }
 
-/* Pages*/
+/*Пагинация*/
 .pagination {
   display: flex;
   margin: 0 0 60px 31px;
@@ -804,7 +796,7 @@ body {
 }
 
 
-/* Footer */
+/* Подвал */
 .page-footer {
   font-size: 14px;
   font-weight: 700;
@@ -820,6 +812,7 @@ body {
   text-align: center;
 }
 
+/*Рассылка*/
 .footer-subscription-image {
   background-image: url("../images/subscribe-background.jpg");
   background-size: 100% auto;
@@ -831,7 +824,6 @@ body {
   width: 1200px;
 }
 
-/* Form */
 .footer-subscription-title {
   font-weight: 700;
   font-size: 30px;
@@ -859,6 +851,7 @@ body {
   width: 800px;
   margin: 0 auto;
 }
+
 .field {
   font-weight: 400;
   font-size: 18px;
@@ -887,7 +880,7 @@ body {
   text-transform: uppercase;
 }
 
-/* Social link */
+/*Контакты*/
 .footer-social {
   display: flex;
   flex-wrap: wrap;
@@ -954,13 +947,13 @@ body {
   height: 33px;
 }
 
-/* Catalog footer*/
+/*Подвал в каталоге*/
 .footer-subscription-title-black,
 .footer-subscription-description-black {
   color: #000000;
 }
 
-
+/*Скрытое*/
 .visually-hidden {
   position: absolute;
   width: 1px;
