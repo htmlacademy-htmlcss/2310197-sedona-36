@@ -150,9 +150,10 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   padding: 9px 35px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  max-width: 160px;
 }
-
-
 
 /*Main-page*/
 .main-container {
@@ -169,11 +170,17 @@ body {
   background-image: url("../images/main/welcome-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 0;
+  background-position: center;
   padding-top: 51px;
   padding-bottom: 82px;
 }
 
+/*
+  background-image: url("../images/main/divider.svg"), url("../images/main/welcome-background.jpg");
+  background-size: cover, 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center bottom;
+  */
 .welcome-img {
   display: block;
   margin: 0 auto;
@@ -218,7 +225,7 @@ body {
 .advantages-item-container {
   width: 230px;
   min-height: 200px;
-  padding: 95px 85px;
+  padding: 93px 85px;
   text-align: center;
 }
 
@@ -276,6 +283,17 @@ body {
   color: #FFFFFF;
 }
 
+.advantages-nature {
+  height: 100%;
+  width: 800px;
+}
+
+.nature {
+  height: 100%;
+  width: 800px;
+  overflow: hidden;
+  object-fit: contain;
+}
 /*Преимущества отелей*/
 .hotel-advantages-container {
   width: 505px;
@@ -410,6 +428,7 @@ body {
   border-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  width: 376px;
 }
 
 /* Catalog */
@@ -727,6 +746,10 @@ body {
   text-transform: uppercase;
 }
 
+.product-card-image {
+  object-fit: contain;
+}
+
 /*Кнопки каталог*/
 .button-add {
   color: #FFFFFF;
@@ -875,6 +898,7 @@ body {
   line-height: 36px;
   padding: 8px 50px;
   margin: 0;
+  width: 232px;
 }
 
 .blue-button {
@@ -943,6 +967,10 @@ body {
   margin: 0;
 }
 
+.footer-company-phones {
+  display: flex;
+  flex-direction: column;
+}
 .footer-company-phone {
   color: inherit;
   font-weight: 400;
