@@ -363,13 +363,17 @@ body {
 }
 
 /*Поиск гостиницы*/
-.searching {
+.search {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.search-container {
   width: 592px;
   text-align: center;
-  margin: 100px auto;
+  margin: 0 auto;
 }
 
-.searching-title {
+.search-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -378,10 +382,9 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 0 0 12px 0;
-  width: 592px;
 }
 
-.searching-description {
+.search-description {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -389,18 +392,14 @@ body {
   text-align: center;
   margin: 0 auto 59px;
   padding: 0;
-  width: 592px;
 }
 
 /* Buttons */
-.searching-link {
+.search-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px;
-}
-
-.brown-button {
   font-family: inherit;
   text-align: center;
   color: #ffffff;
