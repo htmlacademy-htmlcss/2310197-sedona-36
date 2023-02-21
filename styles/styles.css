@@ -114,15 +114,21 @@ body {
 }
 
 .navigation-userlink-favourite {
+  position: relative;
   background-image: url("../images/favourite.svg");
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
   background-position: 0 center;
-  padding: 22px 13px;
+  padding: 13px 13px;
 }
 
 .favourite-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 7px;
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
@@ -132,8 +138,8 @@ body {
   background: #7DB54F;
   border-radius: 50%;
   padding: 4px;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
 }
 
 .navigation-userlink-button {
@@ -152,7 +158,7 @@ body {
   padding: 9px 35px;
   margin-top: 14px;
   margin-bottom: 14px;
-  max-width: 160px;
+  box-sizing: border-box;
 }
 
 /*Main-page*/
@@ -222,10 +228,11 @@ body {
   text-align: center;
 }
 
+
 .advantages-item-container {
   width: 230px;
   min-height: 200px;
-  padding: 93px 85px;
+  padding: 92px 85px;
   text-align: center;
 }
 
@@ -235,9 +242,9 @@ body {
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
-  text-align: center;
-  margin: 0 0 60px 0;
-  /*width: 180px;*/
+  margin: 21px auto;
+  padding: 0;
+  width: 172px;
 }
 
 .advantages-description {
@@ -245,7 +252,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   padding: 0;
-  margin: 0
+  margin: 0 auto;
 }
 
 .advantages-list {
@@ -289,6 +296,9 @@ body {
 }
 
 .nature {
+  display: block;
+  margin: 0;
+  padding: 0;
   height: 100%;
   width: 800px;
   overflow: hidden;
@@ -297,7 +307,7 @@ body {
 /*Преимущества отелей*/
 .hotel-advantages-container {
   width: 505px;
-  padding: 50px 0;
+  padding: 65px 0;
   margin: 0 auto;
 }
 
@@ -333,7 +343,7 @@ body {
 
 .hotel-advantages-item-container {
   width: 230px;
-  padding: 97px 85px;
+  padding: 88px 85px;
   margin: 0 auto;
 }
 .hotel-advantages-minititle {
@@ -343,7 +353,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-align: center;
-  padding: 30px 0 12px 0;
+  padding: 30px 0 5px 0;
   margin: 0 0 0 0;
 }
 
@@ -385,7 +395,7 @@ body {
 }
 /*Поиск гостиницы*/
 .search {
-  padding-top: 55px;
+  padding-top: 67px;
   padding-bottom: 105px;
 }
 .search-container {
@@ -429,6 +439,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   width: 376px;
+  box-sizing: border-box;
 }
 
 /* Catalog */
@@ -446,7 +457,7 @@ body {
 
 .filter {
   width: 1060px;
-  padding: 37px 0 21px 68px;
+  padding: 37px 0 0 68px;
 }
 
 .filter-title {
@@ -460,11 +471,11 @@ body {
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
-  margin: 5px 0 0 0;
+  margin: 0;
   padding: 0;
 }
 
-.breadcrumbs-item-main {
+.breadcrumbs-link-main {
   background-image: url("../images/catalog/main-icon.svg");
   width: 12px;
   height: 12px;
@@ -478,13 +489,26 @@ body {
   font-size: 16px;
   line-height: 21px;
   list-style-type: none;
-  margin-right: 30px;
+
 }
 
 .breadcrumbs-link {
-  color: inherit;
+  color: #FFFFFF;
+  margin-right: 30px;
+  padding: 0 20px 0 0;
 }
 
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 /*Фильтрация*/
 .catalog-filter {
   width: 1060px;
@@ -568,6 +592,7 @@ body {
   padding: 0;
   width: 191px;
   border: none;
+  box-sizing: border-box;
 }
 
 /*Список гостиниц*/
@@ -612,7 +637,6 @@ body {
   padding: 0;
 }
 
-
 .viewcards-list {
   display: flex;
   margin: 0;
@@ -620,45 +644,35 @@ body {
   list-style-type: none;
 }
 
-
-/*viewcards-item
-добавить бордеры*/
-
-.viewcards-item-cards {
-  background-image: url("../images/catalog/cards.svg");
-  width: 16px;
-  height: 14px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  padding: 17px;
+.viewcards-item {
   border: 2px solid #E6E6E6;
   border-radius: 4px;
 }
 
-.viewcards-item-one {
-  background-image: url("../images/catalog/one-card.svg");
+.viewcards-grid-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 14px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  padding: 17px;
-  border: 2px solid #E6E6E6;
-  border-radius: 4px;
+  padding: 16px;
 }
 
-.viewcards-item-list {
-  background-image: url("../images/catalog/list.svg");
-  width: 16px;
-  height: 14px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  padding: 17px;
-  border: 2px solid #E6E6E6;
-}
-
-.viewcards-item-current {
+.viewcards-item:hover {
   border: 2px solid #000000;
+  border-radius: 4px;
 }
+
+.viewcards-item:focus {
+  border: 2px solid #68A2CA;
+  border-radius: 4px;
+}
+
+.viewcards-item:active {
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
 .product-list {
   /*display: flex;
   flex-wrap: wrap;
@@ -694,6 +708,7 @@ body {
   margin: 0 0 16px 0;
   padding: 0;
   width: 300px;
+  box-sizing: border-box;
 }
 
 .housingtype-rating {
@@ -760,6 +775,7 @@ body {
   text-decoration: none;
   padding: 8px 50px;
   margin-bottom: 32px;
+  box-sizing: border-box;
 }
 
 .button-delete {
@@ -773,6 +789,7 @@ body {
   padding: 8px 50px;
   background-color: rgba(28,28,28,0);
   border: rgba(28,28,28,0);
+  box-sizing: border-box;
 }
 
 .button {
@@ -787,18 +804,21 @@ body {
   background-color: #756157;
   padding: 8px 30px;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .button-favourite {
   background-color: #82B3D3;
   padding: 8px 30px;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .selected {
   background-color: #7DB54F;
   padding: 8px 30px;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 /*Пагинация*/
@@ -817,8 +837,21 @@ body {
   text-decoration: none;
   color: #FFFFFF;
   background-color: #82B3D3;
+  border-color: #82B3D3;
   padding: 14px 24px;
   margin-right: 7px;
+}
+
+.pagination-link:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:focus {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
 }
 
 .pagination-current {
@@ -879,6 +912,7 @@ body {
 }
 
 .footer-subscription-form {
+  display: flex;
   width: 800px;
   margin: 0 auto;
 }
@@ -889,8 +923,8 @@ body {
   line-height: 24px;
   color: #000000;
   width: 452px;
-  height: 52px;
   margin: 0;
+  padding: 0;
 }
 
 .footer-subscription-button {
@@ -900,6 +934,7 @@ body {
   padding: 8px 50px;
   margin: 0;
   width: 232px;
+  box-sizing: border-box;
 }
 
 .blue-button {
@@ -920,7 +955,7 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   width: 1060px;
-  padding-top: 45px;
+  padding-top: 40px;
   padding-bottom: 35px;
 }
 
@@ -928,44 +963,39 @@ body {
   display: flex;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 0;
   width: 142px;
   list-style-type: none;
 }
 
-.footer-social-item {
-  width: 47px;
-  height: 40px;
-}
 
-.footer-social-item-vk {
-  background-image: url("../images/social-icon/vk.svg");
-  width: 24px;
-  height: 14px;
-  background-repeat: no-repeat;
-  background-position: 0 center;
+.footer-social-link {
+  position: relative;
   padding: 20px 15px;
   margin: 0;
 }
 
-.footer-social-item-telegram {
-  background-image: url("../images/social-icon/telegram.svg");
-  width: 18px;
-  height: 16px;
-  background-repeat: no-repeat;
-  background-position: 0 center;
-  padding: 20px 15px;
-  margin: 0;
+
+.footer-social-icon  {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83B3D3;
 }
 
-.footer-social-item-youtube {
-  background-image: url("../images/social-icon/youtube.svg");
-  width: 22px;
-  height: 17px;
-  background-repeat: no-repeat;
-  background-position: 0 center;
-  padding: 20px 15px;
-  margin: 0;
+.footer-social-icon:hover  {
+  fill: #68A2CA;
+}
+
+.footer-social-icon:focus  {
+  fill: #68A2CA;
+}
+
+.footer-social-icon:active  {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-company-phones {
@@ -973,7 +1003,7 @@ body {
   flex-direction: column;
 }
 .footer-company-phone {
-  color: inherit;
+  color: #000000;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -983,12 +1013,37 @@ body {
   padding: 0;
 }
 
+.footer-company-phone:hover {
+  color: #756157;
+}
+
+.footer-company-phone:focus {
+  color: #756157;
+}
+
+.footer-company-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .htmlacademy-link {
   width: 115px;
   height: 33px;
   margin: 0;
   padding: 0;
 }
+
+.htmlacademy-icon:hover {
+  color: #756157;
+}
+
+.htmlacademy-icon:focus {
+  color: #756157;
+}
+
+.htmlacademy-icon:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 
 /*Подвал в каталоге*/
 .footer-subscription-title-black,
