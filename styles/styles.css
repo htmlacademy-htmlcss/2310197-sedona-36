@@ -642,7 +642,7 @@ body {
   flex-wrap: wrap;
   /*justify-content: space-between;*/
   margin: 17px 0 53px 71px;
-  padding: 0 0 70px 0;
+  padding: 0 0 62px 0;
 }
 
 .catalog-filter-infrastructure {
@@ -712,7 +712,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  margin: 0 0 24px 0;
+  margin: 0 0 43px 0;
   padding: 11px 0 11px 20px;
   width: 122px;
 }
@@ -725,6 +725,44 @@ body {
   padding-right: 12px;
 }
 
+.range-block {
+  margin: 0 0 0 11px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-bottom: 16px;
+  background-color: #888888;
+}
+
+.range {
+  position: absolute;
+  height: 4px;
+  margin-bottom: 16px;
+  background-color: #FFFFFF;
+}
+
+.range-button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 5px solid #FFFFFF;
+  border-radius: 22%;
+  cursor: pointer;
+}
+
+.button-min {
+  top: -8px;
+  left: -10px;
+}
+
+.button-max {
+  top: -8px;
+  right: -10px;
+}
+
 .catalog-filter-button {
   margin: 56px 0 0 0;
   padding: 0;
@@ -733,8 +771,6 @@ body {
   box-sizing: border-box;
   cursor: pointer;
 }
-
-
 
 /*Список гостиниц*/
 .catalog-right-column {
@@ -797,6 +833,9 @@ body {
 }
 
 .select-option {
+  display: flex;
+  flex-wrap: wrap;
+  width: 292px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
