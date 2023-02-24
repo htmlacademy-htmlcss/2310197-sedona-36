@@ -48,6 +48,10 @@ body {
   margin: 0 0 0 70px;
 }
 
+.link-main-page:focus {
+  outline-color: #81B3D3;
+}
+
 .navigation {
   display: flex;
   margin: 0 auto;
@@ -75,7 +79,7 @@ body {
   width: calc(100% - 36px);
   border-bottom: 2px solid #756257;
   position: absolute;
-  bottom: -4px;
+  bottom: -1px;
   left: 18px;
 }
 
@@ -85,12 +89,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   /*justify-content: space-between;*/
-  margin: 0 45px 0 0;
+  margin: 0 69px 0 0;
   padding: 0;
   margin-left: auto;
   list-style-type: none;
   align-items: center;
-  width: 280px;
+  max-width: 280px;
 }
 
 .navigation-link {
@@ -103,10 +107,17 @@ body {
   color: #333333;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 }
 
-.navigation-useritem {
-  margin-right: 15px;
+.navigation-link:focus {
+  outline-color: #81B3D3;
+}
+
+
+.navigation-user .navigation-userlink {
+  min-width: 18px;
+  min-height: 18px;
 }
 
 .navigation-userlink {
@@ -119,6 +130,13 @@ body {
   color: #333333;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
+  padding: 19px 11px;
+  margin-right: 0;
+}
+
+.navigation-userlink:focus {
+  outline-color: #81B3D3;
 }
 
 .navigation-userlink-searching {
@@ -126,8 +144,9 @@ body {
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  background-position: 0 center;
-  padding: 22px 5px;
+  background-position: center center;
+  margin-right: 0;
+
 }
 
 .navigation-userlink-favourite {
@@ -136,14 +155,15 @@ body {
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  background-position: 0 center;
-  padding: 13px 8px;
+  background-position: center center;
+  margin-right: 20px;
+
 }
 
 .favourite-number {
   position: absolute;
-  top: 4px;
-  right: 9px;
+  top: 7px;
+  right: 3px;
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
@@ -171,11 +191,12 @@ body {
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 8px 35px;
+  padding: 8px 34px;
   margin-top: 13px;
   margin-bottom: 13px;
   max-width: 165px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .navigation-userlink-button:hover {
@@ -210,38 +231,19 @@ body {
 
 /*Приветственный блок*/
 .welcome {
-  /*position: relative;*/
   background-color: #7c97a8;
-  background-image: url("../images/main/welcome-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../images/main/divider.svg"), url("../images/main/welcome-background.jpg");
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat no-repeat;
+  background-position: center bottom, center;
   padding-top: 51px;
   padding-bottom: 82px;
 }
-
-/*
-.welcome::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url("../images/main/divider.svg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-*/
 
 .welcome-img {
   display: block;
   margin: 0 auto;
 }
-
-/*
-.welcome-img::after {
-  background-image: url("../images/main/divider.svg");
-}
-*/
 
 /*Преимущества города*/
 .main-advantages-container {
@@ -529,6 +531,7 @@ body {
   width: 376px;
   box-sizing: border-box;
   display: inline-block;
+  cursor: pointer;
 }
 
 .search-link:hover {
@@ -585,12 +588,14 @@ body {
 }
 
 .breadcrumbs-link-main {
+  display: block;
   background-image: url("../images/catalog/main-icon.svg");
   width: 12px;
   height: 12px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  cursor: pointer;
 }
 
 .breadcrumbs-item {
@@ -601,13 +606,15 @@ body {
   list-style-type: none;
 }
 
-.breadcrumbs-item::before {
+.breadcrumbs-link-main::after {
   position: absolute;
-  bottom: 7px;
-  left: 24px;
-  width: 60px;
-  height: 2px;
+  bottom: 4px;
+  left: 30px;
+  width: 6px;
+  height: 9px;
   background-image: url("../images/catalog/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   content: "";
 }
 
@@ -615,6 +622,7 @@ body {
   color: #FFFFFF;
   margin-right: 30px;
   padding: 0 20px 0 0;
+  cursor: pointer;
 }
 
 .breadcrumbs-link:hover {
@@ -714,6 +722,7 @@ body {
   width: 191px;
   border: none;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 /*Список гостиниц*/
@@ -759,6 +768,7 @@ body {
   width: 292px;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .select-control:hover {
@@ -798,6 +808,7 @@ body {
   width: 16px;
   height: 14px;
   padding: 16px;
+  cursor: pointer;
 }
 
 .viewcards-item:hover {
@@ -892,6 +903,11 @@ body {
 .product-card-link {
   text-decoration: none;
   width: 300px;
+  cursor: pointer;
+}
+
+.product-card-link:focus {
+  outline-color: #81B3D3;
 }
 
 .product-card-image {
@@ -950,6 +966,8 @@ body {
   padding: 8px 50px;
   margin-bottom: 32px;
   box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .button-add:hover {
@@ -982,6 +1000,8 @@ body {
   background-color: rgba(28, 28, 28, 0);
   border: rgba(28, 28, 28, 0);
   box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .button-delete:hover {
@@ -1017,6 +1037,8 @@ body {
   border-radius: 4px;
   max-width: 140px;
   box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .button-additional:hover {
@@ -1050,6 +1072,8 @@ body {
   border-radius: 4px;
   max-width: 152px;
   box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .button-favourite:hover {
@@ -1075,6 +1099,8 @@ body {
   padding: 8px 30px;
   border-radius: 4px;
   box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .selected:hover {
@@ -1114,6 +1140,7 @@ body {
   border-color: #82B3D3;
   padding: 14px 24px;
   margin-right: 7px;
+  cursor: pointer;
 }
 
 .pagination-link:hover {
@@ -1219,6 +1246,8 @@ body {
   margin: 0;
   width: 232px;
   box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .footer-subscription-button:hover {
@@ -1265,6 +1294,7 @@ body {
   position: relative;
   padding: 20px 23px;
   margin: 0;
+  cursor: pointer;
 }
 
 
@@ -1278,7 +1308,7 @@ body {
   fill: #83B3D3;
 }
 
-.footer-social-link:hover, .footer-social-icon {
+.footer-social-icon:hover {
   fill: #68A2CA;
 }
 
@@ -1308,7 +1338,7 @@ body {
   width: 720px;
   margin: 0;
   padding: 0;
-
+  cursor: pointer;
 }
 
 .footer-company-phone:hover {
@@ -1329,18 +1359,19 @@ body {
   height: 33px;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
-.htmlacademy-icon:hover {
+.htmlacademy-link:hover .htmlacademy-icon {
   fill: #756157;
 }
 
-.htmlacademy-icon:focus {
+.htmlacademy-link:focus .htmlacademy-icon {
   fill: #756157;
   outline: none;
 }
 
-.htmlacademy-icon:active {
+.htmlacademy-link:active .htmlacademy-icon {
   fill: rgba(117, 97, 87, 0.3);
 }
 
