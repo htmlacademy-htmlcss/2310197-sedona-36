@@ -744,14 +744,14 @@ body {
 
 .housing-list {
   width: 1060px;
-  margin: 0 0 77px 0;
-  padding: 0;
+  margin: 0 0 81px 0;
+  padding: 5px 0 0 0;
 }
 
 .housing-list-sorting {
   display: flex;
-  margin: 0 0 23px 0;
-  padding: 6px 0;
+  margin: 0 0 38px 0;
+  padding: 0;
 }
 
 .housing-list-title {
@@ -767,17 +767,13 @@ body {
 
 .housing-list-viewfilter {
   display: flex;
-  gap: 70px;
+  margin: -8px 0 0 0;
 }
 
 .select-control {
-  color: #333333;
   border: 2px solid #E5E5E5;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
   width: 292px;
-  margin: 0;
+  margin: 0 77px 0 0;
   padding: 0;
   cursor: pointer;
 }
@@ -800,10 +796,17 @@ body {
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
+.select-option {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
 .viewcards-list {
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 0;
   list-style-type: none;
 }
 
@@ -818,7 +821,7 @@ body {
   justify-content: center;
   width: 16px;
   height: 14px;
-  padding: 16px;
+  padding: 17px 16px;
   cursor: pointer;
 }
 
@@ -869,9 +872,10 @@ body {
 
 .housingtype-rating {
   display: flex;
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
+  margin: -11px 0 -16px 0;
   padding: 0;
   width: 300px;
 }
@@ -946,6 +950,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-right: 22px;
 }
 
 .product-card-image {
@@ -1070,7 +1075,7 @@ body {
   line-height: 20px;
   text-decoration: none;
   background-color: #82B3D3;
-  padding: 8px 30px;
+  padding: 8px 26px;
   border-radius: 4px;
   max-width: 152px;
   box-sizing: border-box;
@@ -1098,7 +1103,7 @@ body {
 
 .selected {
   background-color: #7DB54F;
-  padding: 8px 30px;
+  padding: 8px 26px;
   border-radius: 4px;
   box-sizing: border-box;
   cursor: pointer;
@@ -1126,13 +1131,14 @@ body {
 /*Пагинация*/
 .pagination {
   display: flex;
-  margin: 0 0 66px 0;
+  margin: 0 0 63px 0;
   padding: 0 0 0 0;
   width: 400px;
   list-style-type: none;
 }
 
 .pagination-link {
+  display: inline-block;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -1140,9 +1146,13 @@ body {
   color: #FFFFFF;
   background-color: #82B3D3;
   border-color: #82B3D3;
-  padding: 14px 24px;
-  margin-right: 7px;
+  padding: 11px 23px;
+  margin-right: 8px;
   cursor: pointer;
+  height: 60px;
+  width: 60px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .pagination-link:hover {
@@ -1166,8 +1176,8 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
-  padding: 14px 24px;
-  margin-right: 7px;
+  padding: 11px 23px;
+  margin-right: 8px;
   color: #000000;
   background-color: #F2F2F2;
 }
