@@ -122,8 +122,6 @@ body {
 
 .navigation-userlink {
   display: block;
-  /*width: 44px;
-  height: 64px;*/
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -146,7 +144,6 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   margin-right: 0;
-
 }
 
 .navigation-userlink-favourite {
@@ -174,7 +171,6 @@ body {
   border-radius: 50%;
   padding: 5px;
   min-width: 10px;
-  /*height: 18px;*/
   box-sizing: border-box;
 }
 
@@ -266,8 +262,6 @@ body {
 .main-advantages-city {
   padding: 0;
   margin: 0;
-  /*
-  margin: 0 0 17px 0;*/
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -436,7 +430,10 @@ body {
   line-height: 21px;
   color: #333333;
 }
-.hotel-advantages-housing, .hotel-advantages-food, .hotel-advantages-gift {
+
+.hotel-advantages-housing,
+.hotel-advantages-food,
+.hotel-advantages-gift {
   position: relative;
 }
 
@@ -479,7 +476,8 @@ body {
   padding: 0;
 }
 
-.housing, .gift {
+.housing,
+.gift {
   background-color: #83B3D31F;
 }
 
@@ -569,21 +567,21 @@ body {
 
 .filter {
   width: 1060px;
-  padding: 37px 0 0 68px;
+  padding: 37px 0 22px 72px;
 }
 
 .filter-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  margin: 0;
+  margin:  0 0 8px 0;
   padding: 0;
 }
 
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 0 0 0;
   padding: 0;
 }
 
@@ -595,7 +593,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  cursor: pointer;
 }
 
 .breadcrumbs-item {
@@ -604,12 +601,13 @@ body {
   font-size: 16px;
   line-height: 21px;
   list-style-type: none;
+  margin-right: 26px;
 }
 
 .breadcrumbs-link-main::after {
   position: absolute;
-  bottom: 4px;
-  left: 30px;
+  bottom: 6px;
+  left: 25px;
   width: 6px;
   height: 9px;
   background-image: url("../images/catalog/arrow.svg");
@@ -620,9 +618,8 @@ body {
 
 .breadcrumbs-link {
   color: #FFFFFF;
-  margin-right: 30px;
-  padding: 0 20px 0 0;
   cursor: pointer;
+  padding: 0 3px 6px 0;
 }
 
 .breadcrumbs-link:hover {
@@ -642,21 +639,22 @@ body {
 .catalog-filter {
   width: 1060px;
   display: flex;
-  justify-content: space-between;
-  margin: 17px 0 53px 67px;
-  padding: 0 0 65px 0;
+  flex-wrap: wrap;
+  /*justify-content: space-between;*/
+  margin: 17px 0 53px 71px;
+  padding: 0 0 70px 0;
 }
 
 .catalog-filter-infrastructure {
   width: 155px;
-  margin: 0;
+  margin: 0 63px 0 0;
   padding: 0;
   border: none;
 }
 
 .catalog-filter-housingtype {
   width: 155px;
-  margin: 0;
+  margin: 0 136px 0 0;
   padding: 0;
   border: none;
 }
@@ -672,7 +670,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  margin: 0 0 40px 0;
+  margin: 0 0 32px 0;
 }
 
 .catalog-filter-list {
@@ -686,19 +684,22 @@ body {
 
 .catalog-filter-item {
   padding: 0;
-  margin: 17px 0 0 0;
+  margin: 12px 0 0 0;
 }
 
 .control-input {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  width: 20px;
+  height: 20px;
+  margin: 2px 13px 0 0;
 }
 
 .catalog-filter-price {
   width: 226px;
   border: none;
-  margin: 0;
+  margin: 0 67px 0 0;
   padding: 0;
 }
 
@@ -707,13 +708,21 @@ body {
 }
 
 .catalog-filter-pricerange {
-  width: 113px;
   color: #000000;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  margin: 0 0 36px 0;
-  padding: 8px 0 8px 20px;
+  margin: 0 0 24px 0;
+  padding: 11px 0 11px 20px;
+  width: 122px;
+}
+
+.catalog-filter-pricerange::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  padding-right: 12px;
 }
 
 .catalog-filter-button {
@@ -724,6 +733,8 @@ body {
   box-sizing: border-box;
   cursor: pointer;
 }
+
+
 
 /*Список гостиниц*/
 .catalog-right-column {
@@ -828,10 +839,6 @@ body {
 }
 
 .product-list {
-  /*display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 0 0 63px 40px;*/
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
@@ -848,12 +855,6 @@ body {
   padding: 20px;
   border: 1px solid #E6E6E6;
 }
-
-/*
-.product-card:nth-child(3n) {
-  margin: 0 0 20px 0;
-}
-*/
 
 .housingtype-price,
 .housingtype-button {
@@ -963,7 +964,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 50px;
+  padding: 8px 51px;
   margin-bottom: 32px;
   box-sizing: border-box;
   cursor: pointer;
@@ -996,7 +997,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  padding: 8px 50px;
+  padding: 8px 51px;
+  margin: 0 auto;
   background-color: rgba(28, 28, 28, 0);
   border: rgba(28, 28, 28, 0);
   box-sizing: border-box;
@@ -1171,6 +1173,7 @@ body {
 }
 
 
+
 /* Подвал */
 .page-footer {
   font-size: 14px;
@@ -1272,8 +1275,6 @@ body {
 .footer-social {
   display: flex;
   flex-wrap: wrap;
-  /*align-items: center;
-  justify-content: space-between;*/
   margin: 0 auto;
   width: 1060px;
   padding: 45px 0 35px 0;
@@ -1289,14 +1290,12 @@ body {
   list-style-type: none;
 }
 
-
 .footer-social-link {
   position: relative;
   padding: 20px 23px;
   margin: 0;
   cursor: pointer;
 }
-
 
 .footer-social-icon {
   position: absolute;
@@ -1375,12 +1374,13 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-
 /*Подвал в каталоге*/
 .footer-subscription-title-black,
 .footer-subscription-description-black {
   color: #000000;
 }
+
+
 
 /*Скрытое*/
 .visually-hidden {
