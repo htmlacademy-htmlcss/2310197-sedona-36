@@ -903,11 +903,16 @@ body {
 }
 
 .select-control {
+  background-image: url("../images/catalog/arrow-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
   border: 2px solid #E5E5E5;
+  border-radius: 4px;
   width: 292px;
   margin: 0 77px 0 0;
-  padding: 0;
+  padding: 12px 40px 12px 20px;
   cursor: pointer;
+  appearance: none;
 }
 
 .select-control:hover {
@@ -915,13 +920,11 @@ body {
 }
 
 .select-control:focus {
-  border: 2px solid #68A2CA;
+  border: 2px solid #3F5E72;
   outline: none;
 }
 
-.select-control:active {
-  border: 2px solid #3F5E72;
-}
+
 
 .select-control:disabled {
   color: rgba(0, 0, 0, 0.3);
@@ -1457,16 +1460,16 @@ body {
   fill: #83B3D3;
 }
 
-.footer-social-icon:hover {
+.footer-social-link:hover .footer-social-icon {
   fill: #68A2CA;
 }
 
-.footer-social-icon:focus {
+.footer-social-link:focus .footer-social-icon {
   fill: #68A2CA;
   outline: none;
 }
 
-.footer-social-icon:active {
+.footer-social-link:active .footer-social-icon {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -1513,6 +1516,7 @@ body {
 
 .htmlacademy-icon {
   display: block;
+  fill: #000000;
 }
 
 .htmlacademy-link:hover .htmlacademy-icon {
