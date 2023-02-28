@@ -1438,6 +1438,8 @@ body {
 }
 
 .footer-social-link {
+  display: flex;
+  align-items: center;
   position: relative;
   padding: 20px 23px;
   margin: 0;
