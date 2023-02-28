@@ -1419,6 +1419,8 @@ body {
 /*Контакты*/
 .footer-social {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
   width: 1060px;
@@ -1443,6 +1445,7 @@ body {
 }
 
 .footer-social-icon {
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
@@ -1504,6 +1507,10 @@ body {
   margin: 0;
   padding: 0;
   cursor: pointer;
+}
+
+.htmlacademy-icon {
+  display: block;
 }
 
 .htmlacademy-link:hover .htmlacademy-icon {
