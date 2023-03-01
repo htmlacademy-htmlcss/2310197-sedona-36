@@ -280,8 +280,46 @@
       </footer>
     </div>
 
-    <div class="modal">
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
 
+            <p class="field-groupin">
+              <label class="modal-label" for="check-in">
+                Дата Заезда:
+              </label>
+              <input class="modal-field" placeholder="дата" type="date" name="modal-field" id="check-in" required>
+
+            </p>
+
+            <p class="field-groupout">
+              <label class="modal-label" for="check-out">
+                Дата Выезда:
+              </label>
+              <input class="modal-field" placeholder="дата" type="date" name="modal-field" id="check-out" required>
+              </p>
+
+            <p class="field-group">
+              <label class="modal-labelsquare" for="adults">
+                Взрослые:
+              </label>
+              <input class="modal-square" placeholder="количество взрослых" type="number" name="modal-field" id="adults" required>
+
+              <label class="modal-labelsquare" for="children">
+                Дети:
+              </label>
+              <input class="modal-square" placeholder="количество детей" type="number" name="modal-field" id="children"
+                required>
+            </p>
+            <button class="modal-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 
