@@ -1101,6 +1101,20 @@ body {
   padding: 0;
 }
 
+.product-card-title:hover  {
+  color: #a3cbe6;
+}
+
+.product-card-title:focus {
+  color: #a3cbe6;
+  outline: none;
+}
+
+.product-card-title:active  {
+  color: rgba(104, 162, 202, 0.3);
+}
+
+
 .product-card-housingtype {
   color: #333333;
   font-weight: 400;
