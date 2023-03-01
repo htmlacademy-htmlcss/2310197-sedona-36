@@ -110,10 +110,32 @@ body {
   cursor: pointer;
 }
 
+.navigation-link:hover {
+  color: #68A2CA;
+}
+
 .navigation-link:focus {
   outline-color: #81B3D3;
 }
 
+.navigation-link:active {
+  color: #7c97a8;
+}
+
+/*
+.footer-social-link:hover .footer-social-icon {
+  fill: #68A2CA;
+}
+
+.footer-social-link:focus .footer-social-icon {
+  fill: #68A2CA;
+  outline: none;
+}
+
+.footer-social-link:active .footer-social-icon {
+  fill: rgba(104, 162, 202, 0.3);
+}
+*/
 
 .navigation-user .navigation-userlink {
   min-width: 18px;
@@ -154,7 +176,19 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   margin-right: 20px;
+}
 
+.navigation-userlink:hover  {
+  background-color: rgba(104, 162, 202, 0.3);
+}
+
+.navigation-userlink:focus {
+  background-color: rgba(104, 162, 202, 0.3);
+  outline: none;
+}
+
+.navigation-userlink:active  {
+  background-color: #a3cbe6;
 }
 
 .favourite-number {
