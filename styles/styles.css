@@ -681,7 +681,7 @@ body {
 
 .catalog-filter-infrastructure {
   width: 155px;
-  margin: 0 63px 10px 0;
+  margin: 0 61px 10px 0;
   padding: 0;
   border: none;
 }
@@ -744,8 +744,8 @@ body {
 
 .control-mark {
   position: absolute;
-  top: 1px;
-  left: -2px;
+  top: 0;
+  left: 0;
   width: 19px;
   height: 19px;
   border: 1px solid #FFFFFF;
@@ -927,7 +927,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-align: left;
-  margin: 0 200px 0 0;
+  margin: 0 197px 0 0;
   padding: 0;
 }
 
@@ -1220,18 +1220,20 @@ body {
 }
 
 .button-additional {
+  text-transform: uppercase;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   background-color: #756157;
-  padding: 8px 30px;
+  padding: 8px 26px;
   border-radius: 4px;
   max-width: 140px;
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
+  margin-right: 20px;
 }
 
 .button-additional:hover {
@@ -1255,13 +1257,14 @@ body {
 }
 
 .button-favourite {
+  text-transform: uppercase;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   background-color: #82B3D3;
-  padding: 8px 26px;
+  padding: 8px 20px;
   border-radius: 4px;
   max-width: 152px;
   box-sizing: border-box;
@@ -1289,7 +1292,7 @@ body {
 
 .selected {
   background-color: #7DB54F;
-  padding: 8px 26px;
+  padding: 8px 18px;
   border-radius: 4px;
   box-sizing: border-box;
   cursor: pointer;
@@ -1366,6 +1369,11 @@ body {
   margin-right: 8px;
   color: #000000;
   background-color: #F2F2F2;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 
@@ -1439,7 +1447,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 36px;
   padding: 8px 50px;
   margin: 0;
