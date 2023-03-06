@@ -73,7 +73,7 @@ body {
   position: relative;
 }
 
-.navigation-item-current::before {
+.navigation-item-current::after {
   content: "";
   height: 1px;
   width: calc(100% - 36px);
@@ -151,7 +151,7 @@ body {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  padding: 19px 11px;
+  padding: 19px 13px;
   margin-right: 0;
 }
 
@@ -244,10 +244,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.navigation-userlink-button:disabled {
-  background-color: #E5E5E5;
-  border-color: #E5E5E5;
-}
 
 /*Main-page*/
 .main-container {
@@ -278,7 +274,7 @@ body {
 /*Преимущества города*/
 .main-advantages-container {
   width: 655px;
-  padding: 69px 0 88px 0;
+  padding: 71px 0 90px 0;
   margin: 0 auto;
 }
 
@@ -303,7 +299,12 @@ body {
   text-align: center;
 }
 
-
+.advantages-item-container-img {
+  width: 230px;
+  min-height: 200px;
+  padding: 86px 85px;
+  text-align: center;
+}
 .advantages-item-container {
   width: 230px;
   min-height: 200px;
@@ -318,12 +319,12 @@ body {
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
-  margin: 20px auto;
+  margin: 21px auto;
   padding: 0;
   width: 172px;
 }
 
-.advantages-title::before {
+.advantages-title::after {
   position: absolute;
   bottom: -32px;
   left: 56px;
@@ -333,7 +334,7 @@ body {
   content: "";
 }
 
-.white-advantages-title::before {
+.white-advantages-title::after {
   position: absolute;
   bottom: -21px;
   left: 56px;
@@ -405,7 +406,7 @@ body {
 /*Преимущества отелей*/
 .hotel-advantages-container {
   width: 505px;
-  padding: 65px 0;
+  padding: 67px 0;
   margin: 0 auto;
 }
 
@@ -417,7 +418,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   padding: 0;
-  margin: 0 0 18px 0;
+  margin: 0 0 20px 0;
 }
 
 .hotel-advantages-advantages {
@@ -452,7 +453,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-align: center;
-  padding: 103px 0 31px 0;
+  padding: 98px 0 31px 0;
   margin: 0 0 0 0;
 }
 
@@ -473,7 +474,7 @@ body {
 
 .hotel-advantages-housing::before {
   position: absolute;
-  top: 1px;
+  top: -2px;
   left: 78px;
   content: url("../images/main/housing.svg");
   width: 75px;
@@ -486,7 +487,7 @@ body {
 
 .hotel-advantages-food::before {
   position: absolute;
-  top: 2px;
+  top: -3px;
   left: 80px;
   content:  url("../images/main/food.svg");
   width: 74px;
@@ -499,7 +500,7 @@ body {
 
 .hotel-advantages-gift::before {
   position: absolute;
-  top: -1px;
+  top: -6px;
   left: 84px;
   content:  url("../images/main/present.svg");
   width: 64px;
@@ -581,10 +582,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.search-link:disabled {
-  background-color: #E5E5E5;
-  border-color: #E5E5E5;
-}
 
 /* Catalog */
 
@@ -601,7 +598,7 @@ body {
 
 .filter {
   width: 1060px;
-  padding: 37px 0 22px 72px;
+  padding: 37px 0 22px 70px;
 }
 
 .filter-title {
@@ -675,13 +672,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   /*justify-content: space-between;*/
-  margin: 17px 0 53px 71px;
-  padding: 0 0 62px 0;
+  margin: 18px 0 48px 68px;
+  padding: 0 0 63px 0;
 }
 
 .catalog-filter-infrastructure {
   width: 155px;
-  margin: 0 61px 10px 0;
+  margin: 0 65px 10px 0;
   padding: 0;
   border: none;
 }
@@ -697,7 +694,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  margin: 0 0 22px 0;
+  margin: 0 0 20px 0;
 }
 
 .catalog-filter-pricetitle {
@@ -718,7 +715,7 @@ body {
 
 .catalog-filter-item {
   padding: 0;
-  margin: 13px 0 0 0;
+  margin: 14px 0 0 0;
 }
 
 .control-input {
@@ -738,16 +735,15 @@ body {
 }
 
 .control-label {
-  margin: 2px 13px 0 33px;
-
+  margin: 0 0 0 37px;
 }
 
 .control-mark {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 19px;
-  height: 19px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
   border: 1px solid #FFFFFF;
   border-radius: 22%;
   background-color: #ffffff;
@@ -814,7 +810,7 @@ body {
 .catalog-filter-price {
   width: 226px;
   border: none;
-  margin: 0 67px 0 0;
+  margin: 0 64px 0 0;
   padding: 0;
 }
 
@@ -822,13 +818,28 @@ body {
   display: flex;
 }
 
+.input-containerlabel {
+  position: relative;
+}
+
+.catalog-filter-pricetext {
+  position: absolute;
+  right: 23px;
+  top: 12px;
+  color: #000000;
+  opacity: 0.3;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .catalog-filter-pricerange {
   color: #000000;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  margin: 0 0 43px 0;
-  padding: 11px 0 11px 20px;
+  margin: 0 0 44px 0;
+  padding: 10px 0 10px 20px;
   width: 122px;
   cursor: pointer;
 }
@@ -850,8 +861,8 @@ body {
 }
 
 /*Текст введён, курсор внутри поля*/
-.catalog-filter-pricerange:active {
-  border-color: #000000;
+.catalog-filter-pricerange:not(:placeholder-shown) {
+  border: 2px solid #000000;
 }
 
 
@@ -910,8 +921,8 @@ body {
 
 .housing-list {
   width: 1060px;
-  margin: 0 0 81px 0;
-  padding: 5px 0 0 0;
+  margin: 0 0 83px 0;
+  padding: 0;
 }
 
 .housing-list-sorting {
@@ -927,24 +938,28 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-align: left;
-  margin: 0 197px 0 0;
-  padding: 0;
+  margin: 0 199px 0 0;
+  padding: 7px 0 0 0;
 }
 
 .housing-list-viewfilter {
   display: flex;
-  margin: -8px 0 0 0;
+  margin: 0;
+  padding: 0;
 }
 
 .select-control {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
   background-image: url("../images/catalog/arrow-bottom.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 16px center;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   width: 292px;
-  margin: 0 77px 0 0;
-  padding: 12px 40px 12px 20px;
+  margin: 0 73px 0 0;
+  padding: 13px 40px 13px 20px;
   cursor: pointer;
   appearance: none;
 }
@@ -957,8 +972,6 @@ body {
   border: 2px solid #3F5E72;
   outline: none;
 }
-
-
 
 .select-control:disabled {
   color: rgba(0, 0, 0, 0.3);
@@ -977,7 +990,7 @@ body {
 
 .viewcards-list {
   display: flex;
-  margin: 0;
+  margin: 0 0 0 0;
   padding: 0 0 0 0;
   list-style-type: none;
 }
@@ -985,15 +998,16 @@ body {
 .viewcards-item {
   border: 2px solid #E6E6E6;
   border-radius: 4px;
+  margin-right: 6px;
 }
 
 .viewcards-grid-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 16px;
+  width: 14px;
   height: 14px;
-  padding: 17px 16px;
+  padding: 14px 14px;
   cursor: pointer;
 }
 
@@ -1185,10 +1199,10 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
   text-decoration: none;
-  padding: 8px 51px;
+  padding: 8px 54px;
   margin: 0 auto;
   background-color: rgba(28, 28, 28, 0);
   border: rgba(28, 28, 28, 0);
@@ -1251,10 +1265,12 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/*
 .button-additional:disabled {
   background-color: #E5E5E5;
   border-color: #E5E5E5;
 }
+*/
 
 .button-favourite {
   text-transform: uppercase;
@@ -1285,10 +1301,12 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/*
 .button-favourite:disabled {
   background-color: #E5E5E5;
   border-color: #E5E5E5;
 }
+*/
 
 .selected {
   background-color: #7DB54F;
@@ -1312,15 +1330,17 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/*
 .selected:disabled {
   background-color: #E5E5E5;
   border-color: #E5E5E5;
 }
+*/
 
 /*Пагинация*/
 .pagination {
   display: flex;
-  margin: 0 0 63px 0;
+  margin: 0 0 59px 0;
   padding: 0 0 0 0;
   width: 400px;
   list-style-type: none;
@@ -1335,7 +1355,8 @@ body {
   color: #FFFFFF;
   background-color: #82B3D3;
   border-color: #82B3D3;
-  padding: 11px 23px;
+  border-radius: 4px;
+  padding: 11px 19px;
   margin-right: 8px;
   cursor: pointer;
   height: 60px;
@@ -1395,7 +1416,7 @@ body {
 }
 
 .footer-subscription {
-  padding-top: 96px;
+  padding-top: 97px;
   text-align: center;
   padding-bottom: 104px;
 }
@@ -1470,10 +1491,12 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/*
 .footer-subscription-button:disabled {
   background-color: #E5E5E5;
   border-color: #E5E5E5;
 }
+*/
 
 /*Контакты*/
 .footer-social {
@@ -1486,13 +1509,17 @@ body {
   padding: 45px 0 35px 0;
 }
 
+.footer-social-item {
+  margin: 0;
+  padding: 0;
+}
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin: 0 40px 0 0;
-  padding: 0 0 0 0;
-  width: 142px;
+  margin: 0;
+  padding: 0;
+  width: 160px;
   list-style-type: none;
 }
 
@@ -1500,7 +1527,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 20px 23px;
+  padding: 20px 24px;
   margin: 0;
   cursor: pointer;
 }
@@ -1533,7 +1560,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 0 43px 0 0;
+  margin: 0 16px 0 0;
 }
 
 .footer-company-phone {
@@ -1633,24 +1660,41 @@ body {
   border-radius: 30px;
 }
 
+.modal-close-buttonsvg {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+
 .modal-close-button {
   position: absolute;
   padding: 20px;
-  top: 60px;
-  right: 75px;
+  top: 69px;
+  right: 56px;
   width: 14px;
   height: 14px;
   background-color: #F2F2F2;
   border-radius: 50%;
   border-color: #F2F2F2;
-  background-image: url("../images/modal-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+
+.modal-close-button:active .modal-close-buttonsvg  {
+
+}
+
+
 .modal-title {
-  margin: 0 0 64px 0;
+  margin: 0 0 70px 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
@@ -1660,30 +1704,86 @@ body {
   text-transform: uppercase;
 }
 
+
 .modal-form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
   width: 577px;
-  margin: 0 auto;
+  margin: 0 0 0 0;
+  box-sizing: border-box;
 }
 
 .modal-field {
-  width: 420px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  width: 400px;
   margin: 0 0 48px 0;
+  padding: 12px 0 12px 20px;
+  border: none;
+  box-sizing: border-box;
+  background-image: url("../images/main/date.svg");
+  background-repeat: no-repeat;
+  background-position: right 0 center;
+}
+
+.modal-field:hover, .modal-square:hover {
+  color: #000000;
+}
+
+.modal-field:focus, .modal-square:focus {
+  outline-color: #83B3D3;
+}
+
+/*Текст введён, курсор внутри поля*/
+.modal-field:not(:placeholder-shown), .modal-square:not(:placeholder-shown) {
+  border: 2px solid #000000;
+}
+
+.field-group {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 82px;
+}
+
+.modal-group-container {
+  display: flex;
+  width: 110px;
+  /*margin: 0 auto;*/
 }
 
 .modal-square {
-  width: 110px;
-  margin: 0 88px 0 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  padding: 14px 10px;
+  width: 31px;
+  box-sizing: border-box;
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.modal-square::-webkit-outer-spin-button, .modal-square::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .modal-square:last-child {
   margin: 0;
 }
 
-.field-groupin, .field-groupout {
+.field-groupin {
+  position: relative;
+  margin: -6px 0 0 0;
+  padding: 0;
+}
+
+.field-groupout {
   position: relative;
   margin: 0;
   padding: 0;
@@ -1703,8 +1803,8 @@ body {
   font-weight: 400;
   color: #FF5757;
   position: absolute;
-  bottom: 24px;
-  right: 140px;
+  bottom: 25px;
+  right: 142px;
   width: 280px;
   content: "Мы не можем отправить вас в прошлое.";
 }
@@ -1716,17 +1816,105 @@ body {
   font-weight: 400;
   color: #000000;
   position: absolute;
-  bottom: 6px;
-  right: 140px;
-  width: 280px;
+  bottom: 25px;
+  right: 86px;
+  width: 335px;
   content: "На эти даты есть свободные номера. Пока есть.";
 }
 
-.modal-labelsquare {
-  margin-right: 46px;
+.modal-labeladults {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  text-align: center;
+  margin: 10px -32px 0 0;
+  padding: 0;
+}
+
+.modal-labelchildren {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin: 10px -1px 0 0;
+  padding: 0;
+}
+
+.modal-minus  {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 23px 21px;
+  background-image: url("../images/main/button-minus.svg");
+  background-repeat: no-repeat;
+  background-position:  center center;
+  background-color: #F2F2F2;
+  border: none;
+  box-sizing: border-box;
+}
+
+.modal-plus {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 23px 21px;
+  background-image: url("../images/main/button-plus.svg");
+  background-repeat: no-repeat;
+  background-position:  center center;
+  background-color: #F2F2F2;
+  border: none;
+  box-sizing: border-box;
+}
+
+.modal-minus:hover {
+  background-image: url("../images/main/button-minusdark.svg");
+  background-repeat: no-repeat;
+  background-position:  center center;
+}
+
+.modal-plus:hover {
+  background-image: url("../images/main/button-plusdark.svg");
+  background-repeat: no-repeat;
+  background-position:  center center;
+}
+
+.modal-minus:focus {
+  background-image: url("../images/main/button-minusdark.svg");
+  background-repeat: no-repeat;
+  background-position:  center center;
+  border: 3px solid #82B3D3;
+  border-radius: 4px;
+  outline: none;
+}
+
+.modal-plus:focus {
+  background-image: url("../images/main/button-plusdark.svg");
+  background-repeat: no-repeat;
+  background-position:  center center;
+  border: 3px solid #82B3D3;
+  border-radius: 4px;
+  outline: none;
+}
+
+.modal-plus:active {
+  background-image: url("../images/main/button-plus.svg");
+  background-repeat: no-repeat;
+  background-position:  center center;
+  border: none;
+  outline: none;
+}
+
+.modal-minus:active {
+  background-image: url("../images/main/button-minus.svg");
+  background-repeat: no-repeat;
+  background-position:  center center;
+  border: none;
+  outline: none;
+}
+
+.modal-minus:disabled, .modal-plus:disabled {
+  background-color: #E5E5E5;
+  border-color: #E5E5E5;
 }
 
 .modal-button {
@@ -1741,11 +1929,30 @@ body {
   font-size: 20px;
   line-height: 24px;
   padding: 18px 50px;
-  margin: 48px 0 0 0 ;
+  margin: 35px 0 0 0;
   box-sizing: border-box;
   display: inline-block;
   cursor: pointer;
 }
+
+.modal-button:hover {
+  background-color: #68A2CA;
+}
+
+.modal-button:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.modal-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.modal-button:disabled {
+  background-color: #E5E5E5;
+  border-color: #E5E5E5;
+}
+
 
 /*
 .modal-container-close {

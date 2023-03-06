@@ -93,7 +93,7 @@
 
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                   <fieldset class="catalog-filter-infrastructure">
-                    <legend class="catalog-filter-title">Инфраструктура</legend>
+                    <legend class="catalog-filter-title">Инфраструктура:</legend>
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
                         <label class="control">
@@ -120,7 +120,7 @@
                   </fieldset>
 
                   <fieldset class="catalog-filter-housingtype">
-                    <legend class="catalog-filter-title">Тип жилья</legend>
+                    <legend class="catalog-filter-title">Тип Жилья:</legend>
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
                         <label class="control">
@@ -147,17 +147,21 @@
                   </fieldset>
 
                   <fieldset class="catalog-filter-price">
-                    <legend class="catalog-filter-pricetitle">Стоимость, ₽</legend>
+                    <legend class="catalog-filter-pricetitle">Стоимость, ₽:</legend>
                     <div class="input-container">
                       <label class="input-containerlabel" for="price_min"></label><label class="input-containerlabel"
-                        for="price_min"></label>
-                      <input class="catalog-filter-pricerange" id="price_min" type="text" name="price_min" value="0"
-                        placeholder="от">
+                        for="price_min">
+                        <input class="catalog-filter-pricerange" id="price_min" type="text" name="price_min" value="0"
+                        placeholder="сумма">
+                        <span class="catalog-filter-pricetext">от</span>
+                      </label>
 
                       <label class="input-containerlabel" for="price_max"></label><label class="input-containerlabel"
-                        for="price_max"></label>
+                        for="price_max">
                       <input class="catalog-filter-pricerange" id="price_max" type="text" name="price_max" value="9000"
-                        placeholder="до">
+                        placeholder="сумма">
+                        <span class="catalog-filter-pricetext">до</span>
+                      </label>
                     </div>
                     <div class="range-block">
                       <div class="range-scale">
