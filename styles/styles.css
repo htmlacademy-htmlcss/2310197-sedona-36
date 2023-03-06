@@ -1660,12 +1660,6 @@ body {
   border-radius: 30px;
 }
 
-.modal-close-buttonsvg {
-  position: absolute;
-  top: 13px;
-  right: 13px;
-}
-
 .modal-close-button {
   position: absolute;
   padding: 20px;
@@ -1679,6 +1673,13 @@ body {
   cursor: pointer;
 }
 
+.modal-close-buttonsvg {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  fill:#000000;
+}
+
 .modal-close-button:hover {
   background-color: #E6E6E6;
 }
@@ -1689,9 +1690,9 @@ body {
 }
 
 .modal-close-button:active .modal-close-buttonsvg  {
-
+  fill:#000000;
+  opacity: 0.3;
 }
-
 
 .modal-title {
   margin: 0 0 70px 0;
@@ -1704,7 +1705,6 @@ body {
   text-transform: uppercase;
 }
 
-
 .modal-form {
   display: flex;
   flex-wrap: wrap;
@@ -1715,66 +1715,6 @@ body {
   box-sizing: border-box;
 }
 
-.modal-field {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  width: 400px;
-  margin: 0 0 48px 0;
-  padding: 12px 0 12px 20px;
-  border: none;
-  box-sizing: border-box;
-  background-image: url("../images/main/date.svg");
-  background-repeat: no-repeat;
-  background-position: right 0 center;
-}
-
-.modal-field:hover, .modal-square:hover {
-  color: #000000;
-}
-
-.modal-field:focus, .modal-square:focus {
-  outline-color: #83B3D3;
-}
-
-/*Текст введён, курсор внутри поля*/
-.modal-field:not(:placeholder-shown), .modal-square:not(:placeholder-shown) {
-  border: 2px solid #000000;
-}
-
-.field-group {
-  display: flex;
-  margin-bottom: 10px;
-}
-
-.modal-group-container {
-  display: flex;
-  width: 110px;
-  /*margin: 0 auto;*/
-}
-
-.modal-square {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #000000;
-  margin: 0;
-  padding: 14px 10px;
-  width: 31px;
-  box-sizing: border-box;
-  background-color: #F2F2F2;
-  border: none;
-}
-
-.modal-square::-webkit-outer-spin-button, .modal-square::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-.modal-square:last-child {
-  margin: 0;
-}
 
 .field-groupin {
   position: relative;
@@ -1787,6 +1727,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 
 .modal-label {
   margin-right: 24px;
@@ -1821,6 +1762,40 @@ body {
   content: "На эти даты есть свободные номера. Пока есть.";
 }
 
+.modal-field {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  width: 400px;
+  margin: 0 0 48px 0;
+  padding: 12px 0 12px 20px;
+  border: none;
+  box-sizing: border-box;
+  background-image: url("../images/main/date.svg");
+  background-repeat: no-repeat;
+  background-position: right 0 center;
+  cursor: pointer;
+}
+
+.modal-field:hover, .modal-square:hover {
+  color: #000000;
+}
+
+.modal-field:focus, .modal-square:focus {
+  outline-color: #83B3D3;
+}
+
+/*Текст введён, курсор внутри поля*/
+.modal-field:not(:placeholder-shown), .modal-square:not(:placeholder-shown) {
+  border: 2px solid #000000;
+}
+
+.field-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+
 .modal-labeladults {
   font-size: 20px;
   line-height: 24px;
@@ -1839,6 +1814,35 @@ body {
   padding: 0;
 }
 
+.modal-group-container {
+  display: flex;
+  width: 110px;
+  /*margin: 0 auto;*/
+}
+
+.modal-square {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  padding: 14px 10px;
+  width: 31px;
+  box-sizing: border-box;
+  background-color: #F2F2F2;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-square::-webkit-outer-spin-button, .modal-square::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.modal-square:last-child {
+  margin: 0;
+}
+
 .modal-minus  {
   width: 20px;
   height: 20px;
@@ -1850,6 +1854,7 @@ body {
   background-color: #F2F2F2;
   border: none;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .modal-plus {
@@ -1863,6 +1868,7 @@ body {
   background-color: #F2F2F2;
   border: none;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .modal-minus:hover {
