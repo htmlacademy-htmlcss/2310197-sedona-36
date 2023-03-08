@@ -87,7 +87,7 @@
           </h2>
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-city">
-              <div class="advantages-item-container">
+              <div class="advantages-item-container-img">
                 <h3 class="advantages-title white-advantages-title">
                   Настоящий городок
                 </h3>
@@ -131,7 +131,7 @@
             </div>
             </li>
             <li class="advantages-item advantages-item-bridge">
-              <div class="advantages-item-container">
+              <div class="advantages-item-container-img">
                 <h3 class="advantages-title white-advantages-title">
                   Там есть мост дьявола
                 </h3>
@@ -284,6 +284,9 @@
       <div class="modal">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
+          <svg class="modal-close-buttonsvg" aria-hidden="true" focusable="false"  width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"/>
+            </svg>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -293,7 +296,7 @@
               <label class="modal-label" for="check-in">
                 Дата Заезда:
               </label>
-              <input class="modal-field" placeholder="дата" type="date" name="modal-field" id="check-in" required>
+              <input class="modal-field" placeholder="Укажите дату" type="text" name="modal-field" id="check-in" required>
 
             </p>
 
@@ -301,21 +304,39 @@
               <label class="modal-label" for="check-out">
                 Дата Выезда:
               </label>
-              <input class="modal-field" placeholder="дата" type="date" name="modal-field" id="check-out" required>
+              <input class="modal-field" placeholder="Укажите дату" type="text" name="modal-field" id="check-out" required>
               </p>
 
-            <p class="field-group">
-              <label class="modal-labelsquare" for="adults">
+            <div class="field-group">
+              <label class="modal-labeladults" for="adults">
                 Взрослые:
               </label>
-              <input class="modal-square" placeholder="количество взрослых" type="number" name="modal-field" id="adults" required>
+                <div class="modal-group-container">
+                  <button class="modal-minus" type="button"></button>
+                  <input class="modal-square" placeholder="2" type="number" name="modal-field" id="adults" required>
+                  <button class="modal-plus" type="button"></button>
+                </div>
+                <label class="modal-labelchildren" for="children">
+                  Дети:
+                </label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                        </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
 
-              <label class="modal-labelsquare" for="children">
-                Дети:
-              </label>
-              <input class="modal-square" placeholder="количество детей" type="number" name="modal-field" id="children"
-                required>
-            </p>
+
+                <div class="modal-group-container">
+                  <button class="modal-minus" type="button"></button>
+                  <input class="modal-square" placeholder="2" type="number" name="modal-field" id="adults" required>
+                  <button class="modal-plus" type="button"></button>
+                </div>
+            </div>
+
             <button class="modal-button" type="submit">Найти</button>
           </form>
         </section>
