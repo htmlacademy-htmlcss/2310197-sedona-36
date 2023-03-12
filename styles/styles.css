@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 @font-face {
   font-family: "PT Sans";
@@ -56,7 +63,7 @@ body {
   margin: 0 0 0 70px;
 }
 
-.link-main-page:focus {
+.link-main-page:focus-visible {
   outline-color: #81B3D3;
 }
 
@@ -135,7 +142,7 @@ body {
   color: #68A2CA;
 }
 
-.navigation-link:focus {
+.navigation-link:focus-visible {
   outline-color: #81B3D3;
 }
 
@@ -158,11 +165,7 @@ body {
   text-align: center;
   cursor: pointer;
   padding: 19px 13px;
-  margin-right: 0;
-}
-
-.navigation-userlink:focus {
-  outline-color: #81B3D3;
+  margin: 0;
 }
 
 .navigation-userlink-searching {
@@ -171,7 +174,6 @@ body {
   height: 20px;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-right: 0;
 }
 
 .navigation-userlink-favourite {
@@ -181,6 +183,9 @@ body {
   height: 20px;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.navigation-useritem-favourite {
   margin-right: 20px;
 }
 
@@ -188,7 +193,7 @@ body {
   background-color: rgb(104 162 202 / 30%);
 }
 
-.navigation-userlink:focus {
+.navigation-userlink:focus-visible {
   background-color: rgb(104 162 202 / 30%);
   outline: none;
 }
@@ -245,6 +250,12 @@ body {
 }
 
 .navigation-userlink-button:focus {
+  background-color: #615048;
+  border-color: #615048;
+  outline: none;
+}
+
+.navigation-userlink-button:focus-visible {
   background-color: #615048;
   border-color: #615048;
   outline: none;
@@ -608,6 +619,12 @@ body {
   outline: none;
 }
 
+.search-link:focus-visible {
+  background-color: #615048;
+  border-color: #615048;
+  outline: none;
+}
+
 .search-link:active {
   color: rgb(255 255 255 / 30%);
 }
@@ -691,7 +708,12 @@ body {
 }
 
 .breadcrumbs-link:focus {
-  color: #FFF;
+  color: rgb(255 255 255 / 60%);
+  outline: none;
+}
+
+.breadcrumbs-link:focus-visible {
+  color: rgb(255 255 255 / 60%);
   outline: none;
 }
 
@@ -872,8 +894,8 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  background-color: #F2F2F2;;
-  border-color: #F2F2F2;;
+  background-color: #F2F2F2;
+  border-color: #F2F2F2;
   border-radius: 4px 0 0 4px;
   margin: 0 0 44px;
   padding: 11px 0 11px 20px;
@@ -929,11 +951,25 @@ body {
   outline-color: #83B3D3;
 }
 
-/* Текст введён, курсор внутри поля
-.catalog-filter-pricerange:not(:placeholder-shown) {
-  border: 2px solid #000000;
+.catalog-filter-pricerange:focus-visible {
+  outline-color: #83B3D3;
 }
-*/
+
+.catalog-filter-pricerange:focus:where(:not(:-moz-placeholder-shown)) {
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.catalog-filter-pricerange:focus:where(:not(:-ms-input-placeholder)) {
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.catalog-filter-pricerange:focus:where(:not(:placeholder-shown)) {
+  border: 2px solid #000000;
+  outline: none;
+}
+
 
 .range-block {
   margin: 0 0 0 11px;
@@ -999,7 +1035,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 1060px;
   margin: 0 0 39px;
   padding: 0;
@@ -1048,6 +1085,11 @@ body {
 }
 
 .select-control:focus {
+  border: 2px solid #3F5E72;
+  outline: none;
+}
+
+.select-control:focus-visible {
   border: 2px solid #3F5E72;
   outline: none;
 }
@@ -1111,6 +1153,12 @@ body {
 }
 
 .viewcards-item:focus {
+  border: 2px solid #68A2CA;
+  border-radius: 4px;
+  outline: none;
+}
+
+.viewcards-item:focus-visible {
   border: 2px solid #68A2CA;
   border-radius: 4px;
   outline: none;
@@ -1231,6 +1279,10 @@ body {
   outline-color: #81B3D3;
 }
 
+.product-card-link:focus-visible {
+  outline-color: #81B3D3;
+}
+
 .product-card-image {
   display: block;
   margin: 0 auto;
@@ -1318,6 +1370,11 @@ body {
   outline: none;
 }
 
+.button-add:focus-visible {
+  background-color: #68A2CA;
+  outline: none;
+}
+
 .button-add:active {
   color: rgb(255 255 255 / 30%);
 }
@@ -1353,6 +1410,11 @@ body {
 }
 
 .button-delete:focus {
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.button-delete:focus-visible {
   border: 3px solid #83B3D3;
   outline: none;
 }
@@ -1398,6 +1460,12 @@ body {
   outline: none;
 }
 
+.button-additional:focus-visible {
+  background-color: #615048;
+  border-color: #615048;
+  outline: none;
+}
+
 .button-additional:active {
   color: rgb(255 255 255 / 30%);
 }
@@ -1429,6 +1497,11 @@ body {
   outline: none;
 }
 
+.button-favourite:focus-visible {
+  background-color: #68A2CA;
+  outline: none;
+}
+
 .button-favourite:active {
   color: rgb(255 255 255 / 30%);
 }
@@ -1449,6 +1522,11 @@ body {
 }
 
 .selected:focus {
+  background-color: #6C9E42;
+  outline: none;
+}
+
+.selected:focus-visible {
   background-color: #6C9E42;
   outline: none;
 }
@@ -1495,6 +1573,12 @@ body {
 }
 
 .pagination-link:focus {
+  background-color: #68A2CA;
+  border-color: #68A2CA;
+  outline: none;
+}
+
+.pagination-link:focus-visible {
   background-color: #68A2CA;
   border-color: #68A2CA;
   outline: none;
@@ -1593,7 +1677,8 @@ body {
   text-align: center;
   color: #fff;
   background-color: #82B3D3;
-  border: none;
+  border: 1px solid #82B3D3;
+  border-radius: 0 4px 4px 0;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -1614,6 +1699,11 @@ body {
 }
 
 .footer-subscription-button:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.footer-subscription-button:focus-visible {
   background-color: #68A2CA;
   outline: none;
 }
@@ -1693,6 +1783,11 @@ body {
   outline: none;
 }
 
+.footer-social-link:focus-visible .footer-social-icon {
+  fill: #68A2CA;
+  outline: none;
+}
+
 .footer-social-link:active .footer-social-icon {
   fill: rgb(104 162 202 / 30%);
 }
@@ -1730,6 +1825,11 @@ body {
   outline: none;
 }
 
+.footer-company-phone:focus-visible {
+  color: #756157;
+  outline: none;
+}
+
 .footer-company-phone:active {
   color: rgb(117 97 87 / 30%);
 }
@@ -1751,6 +1851,11 @@ body {
 }
 
 .htmlacademy-icon:focus {
+  fill: #756157;
+  outline: none;
+}
+
+.htmlacademy-icon:focus-visible {
   fill: #756157;
   outline: none;
 }
@@ -1833,6 +1938,11 @@ body {
 }
 
 .modal-close-button:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:focus-visible {
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
 }
@@ -1951,20 +2061,43 @@ body {
   outline-color: #83B3D3;
 }
 
-/* Текст введён, курсор внутри поля
-.modal-field:not(:placeholder-shown)
-  border: 2px solid #000000;
+.modal-field:focus:where(:not(:-moz-placeholder-shown)) {
+  border: 2px solid #000;
+  outline: none;
 }
 
-.modal-square:not(:placeholder-shown) {
-  border: 2px solid #000000;
-} */
+.modal-field:focus:where(:not(:-ms-input-placeholder)) {
+  border: 2px solid #000;
+  outline: none;
+}
 
+.modal-field:focus:where(:not(:placeholder-shown)) {
+  border: 2px solid #000;
+  outline: none;
+}
+
+.modal-square:focus:where(:not(:-moz-placeholder-shown)) {
+  border: 2px solid #000;
+  outline: none;
+}
+
+.modal-square:focus:where(:not(:-ms-input-placeholder)) {
+  border: 2px solid #000;
+  outline: none;
+}
+
+.modal-square:focus:where(:not(:placeholder-shown)) {
+  border: 2px solid #000;
+  outline: none;
+}
 
 .modal-field:focus-visible {
   outline: 2px solid #000;
 }
 
+.modal-square:focus-visible {
+  outline: 2px solid #000;
+}
 
 .field-group {
   display: -webkit-box;
@@ -2064,7 +2197,25 @@ body {
   outline: none;
 }
 
+.modal-minus:focus-visible {
+  background-image: url("../images/main/button-minusdark.svg");
+  background-repeat: no-repeat;
+  background-position:  center center;
+  border: 3px solid #82B3D3;
+  border-radius: 4px;
+  outline: none;
+}
+
 .modal-plus:focus {
+  background-image: url("../images/main/button-plusdark.svg");
+  background-repeat: no-repeat;
+  background-position:  center center;
+  border: 3px solid #82B3D3;
+  border-radius: 4px;
+  outline: none;
+}
+
+.modal-plus:focus-visible {
   background-image: url("../images/main/button-plusdark.svg");
   background-repeat: no-repeat;
   background-position:  center center;
@@ -2118,6 +2269,11 @@ body {
 }
 
 .modal-button:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.modal-button:focus-visible {
   background-color: #68A2CA;
   outline: none;
 }
