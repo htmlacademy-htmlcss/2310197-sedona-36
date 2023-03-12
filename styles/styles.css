@@ -1289,6 +1289,7 @@ body {
 }
 
 .product-card-title {
+  width: 300px;
   color: #000;
   font-weight: 700;
   font-size: 24px;
