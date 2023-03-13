@@ -775,19 +775,20 @@ body {
 }
 
 .control-input:focus ~ .control-mark {
-  border-color: #68A2CA;
+  border: 3px solid #68A2CA;
+  border-radius: 4px;
 }
 
 .control:focus-visible .control-mark {
   outline: none;
-  color: #FFF;
-  border-color: #68A2CA;
+  border: 3px solid #68A2CA;
+  border-radius: 4px;
 }
 
 .control:focus .control-mark {
   outline: none;
-  color: #FFF;
-  border-color: #68A2CA;
+  border: 3px solid #68A2CA;
+  border-radius: 4px;
 }
 
 .control:active .control-mark {
