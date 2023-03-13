@@ -770,12 +770,24 @@ body {
   opacity: 0.6;
 }
 
-.control:focus .control-mark {
+.control:focus-visible {
+  outline: none;
+}
+
+.control-input:focus ~ .control-mark {
+  border-color: #68A2CA;
+}
+
+.control:focus-visible .control-mark {
+  outline: none;
   color: #FFF;
-  border: 1px solid #68A2CA;
-  border-radius: 4px;
-  background-color: #fff;
-  outline-color: #68A2CA;
+  border-color: #68A2CA;
+}
+
+.control:focus .control-mark {
+  outline: none;
+  color: #FFF;
+  border-color: #68A2CA;
 }
 
 .control:active .control-mark {
