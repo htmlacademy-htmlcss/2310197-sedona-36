@@ -1981,7 +1981,6 @@ body {
           box-sizing: border-box;
 }
 
-
 .field-groupin {
   position: relative;
   margin: 0;
@@ -1989,9 +1988,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .field-groupout {
@@ -2009,7 +2005,6 @@ body {
   line-height: 24px;
   font-weight: 700;
   width: 125px;
-  display: block;
 }
 
 .modal-field-error {
@@ -2112,8 +2107,9 @@ body {
   line-height: 24px;
   font-weight: 700;
   text-align: center;
-  margin: 10px 45px 0 0;
+  margin: 10px 83px 0 0;
   padding: 0;
+  width: 55px;
 }
 
 .modal-labelchildren {
@@ -2121,8 +2117,9 @@ body {
   line-height: 24px;
   font-weight: 700;
   text-align: center;
-  margin: 10px 83px 0 89px;
+  margin: 10px 79px 0 84px;
   padding: 0;
+  width: 55px;
 }
 
 .modal-group-container {
@@ -2353,7 +2350,6 @@ body {
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
-
 
 
 .modal-container-open {
