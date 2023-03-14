@@ -1,11 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: > 2% and last 1 version
-*/
-
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -33,12 +25,12 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  color: #333;
+  color: #333333;
   background-color: #f2f2f2;
 }
 
 .page-container {
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 0 15px rgb(0 0 0 / 20%);
   width: 1200px;
   margin: 0 auto;
@@ -58,7 +50,7 @@ body {
 }
 
 .link-main-page:focus-visible {
-  outline-color: #81B3D3;
+  outline-color: #81b3d3;
 }
 
 .navigation {
@@ -119,11 +111,11 @@ body {
 }
 
 .navigation-link:hover {
-  color: #68A2CA;
+  color: #68a2ca;
 }
 
 .navigation-link:focus-visible {
-  outline-color: #81B3D3;
+  outline-color: #81b3d3;
 }
 
 .navigation-link:active {
@@ -140,7 +132,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #333;
+  color: #333333;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
@@ -189,10 +181,10 @@ body {
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
-  color: #FFF;
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
-  background: #7DB54F;
+  background: #7db54f;
   border-radius: 50%;
   padding: 5px;
   min-width: 10px;
@@ -208,7 +200,7 @@ body {
   line-height: 20px;
   font-family: inherit;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   background-color: #756157;
   border-color: #756157;
   border-radius: 4px;
@@ -251,7 +243,7 @@ body {
 
 .main-index {
   color: #000;
-  background-color: #FFF;
+  background-color: #ffffff;
 }
 
 /* Welcome section */
@@ -340,7 +332,7 @@ body {
   left: 56px;
   width: 60px;
   height: 2px;
-  background-color: #FFF;
+  background-color: #ffffff;
   content: "";
 }
 
@@ -371,21 +363,21 @@ body {
 
 .advantages-item-city,
 .advantages-item-bridge {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .advantages-item-square,
 .advantages-item-tourists {
-  background-color: #83B3D31F;
+  background-color: #83b3d31f;
 }
 
 .advantages-item-road {
-  background-color: #83B3D333;
+  background-color: #83b3d333;
 }
 
 .advantages-description-white,
 .white-advantages-title {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .advantages-nature {
@@ -558,7 +550,7 @@ body {
   margin-bottom: 10px;
   font-family: inherit;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   background-color: #756157;
   border-color: #756157;
   text-decoration: none;
@@ -596,7 +588,7 @@ body {
 /* Inner navigation */
 .catalog-header {
   width: 1200px;
-  color: #FFF;
+  color: #ffffff;
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -656,7 +648,7 @@ body {
 }
 
 .breadcrumbs-link {
-  color: #FFF;
+  color: #ffffff;
   cursor: pointer;
   padding: 0 3px 6px 0;
 }
@@ -756,9 +748,9 @@ body {
   left: 1px;
   width: 20px;
   height: 20px;
-  border: 1px solid #FFF;
+  border: 1px solid #ffffff;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .control:hover .control-mark {
@@ -775,7 +767,7 @@ body {
 }
 
 .control-input:focus ~ .control-mark {
-  border: 3px solid #68A2CA;
+  outline: 3px solid #68A2CA;
   border-radius: 4px;
 }
 
@@ -912,15 +904,15 @@ body {
   position: absolute;
   height: 4px;
   margin-bottom: 16px;
-  background-color: #FFF;
+  background-color: #ffffff;
 }
 
 .range-button {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #FFF;
-  border: 5px solid #FFF;
+  background: #ffffff;
+  border: 5px solid #ffffff;
   border-radius: 22%;
   cursor: pointer;
 }
@@ -1227,9 +1219,9 @@ body {
 .button-add {
   font-family: inherit;
   text-align: center;
-  color: #fff;
-  background-color: #82B3D3;
-  border: 4px solid #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border: 4px solid #82b3d3;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -1263,14 +1255,14 @@ body {
 }
 
 .button-add:disabled {
-  background-color: #E5E5E5;
-  border-color: #E5E5E5;
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
 }
 
 .button-delete {
   text-align: center;
   text-transform: uppercase;
-  color: #FFF;
+  color: #ffffff;
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;
@@ -1287,17 +1279,17 @@ body {
 
 .button-delete:hover {
   border: none;
-  color: #FFF;
+  color: #ffffff;
   opacity: 0.1;
 }
 
 .button-delete:focus {
-  border: 3px solid #83B3D3;
+  border: 3px solid #83b3d3;
   outline: none;
 }
 
 .button-delete:focus-visible {
-  border: 3px solid #83B3D3;
+  border: 3px solid #83b3d3;
   outline: none;
 }
 
@@ -1308,13 +1300,13 @@ body {
 
 .button-delete:disabled {
   border: none;
-  color: #FFF;
+  color: #ffffff;
   opacity: 0.1;
 }
 
 .button-additional {
   text-transform: uppercase;
-  color: #FFF;
+  color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1353,12 +1345,12 @@ body {
 
 .button-favourite {
   text-transform: uppercase;
-  color: #FFF;
+  color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   padding: 8px 20px;
   border-radius: 4px;
   max-width: 152px;
@@ -1369,16 +1361,16 @@ body {
 }
 
 .button-favourite:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-favourite:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   outline: none;
 }
 
 .button-favourite:focus-visible {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   outline: none;
 }
 
@@ -1387,7 +1379,7 @@ body {
 }
 
 .selected {
-  background-color: #7DB54F;
+  background-color: #7db54f;
   padding: 8px 18px;
   border-radius: 4px;
   box-sizing: border-box;
@@ -1397,16 +1389,16 @@ body {
 }
 
 .selected:hover {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .selected:focus {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
   outline: none;
 }
 
 .selected:focus-visible {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
   outline: none;
 }
 
@@ -1430,9 +1422,9 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
-  color: #FFF;
-  background-color: #82B3D3;
-  border-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border-color: #82b3d3;
   border-radius: 4px;
   padding: 11px 18px;
   margin-right: 8px;
@@ -1444,24 +1436,24 @@ body {
 }
 
 .pagination-link:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .pagination-link:focus {
-  background-color: #68A2CA;
-  border-color: #68A2CA;
+  background-color: #68a2ca;
+  border-color: #68a2ca;
   outline: none;
 }
 
 .pagination-link:focus-visible {
-  background-color: #68A2CA;
-  border-color: #68A2CA;
+  background-color: #68a2ca;
+  border-color: #68a2ca;
   outline: none;
 }
 
 .pagination-link:active {
-  background-color: #82B3D3;
-  border-color: #82B3D3;
+  background-color: #82b3d3;
+  border-color: #82b3d3;
   outline: none;
 }
 
@@ -1473,7 +1465,7 @@ body {
   padding: 11px 23px;
   margin-right: 8px;
   color: #000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   display: inline-block;
   min-height: 60px;
   min-width: 60px;
@@ -1487,7 +1479,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   color: #000;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 /* Subscription */
@@ -1523,7 +1515,7 @@ body {
 
 .footer-subscription-title-white,
 .footer-subscription-description-white {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .footer-subscription-form {
@@ -1537,19 +1529,31 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: #000;
-  width: 432px;
+  color: #000000;
+  width: 428px;
   margin-bottom: 10px;
   padding: 14px 0 14px 22px;
-  border: none;
-  background-color: #F2F2F2;
+  border: 2px solid transparent;
+  border-radius: 4px 0 0 4px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.field:hover {
+  background-color: #e6e6e6;
+}
+
+.field:focus {
+  background-color: #e6e6e6;
+  border-color: #83b3d3;
+  outline: none;
 }
 
 .footer-subscription-button {
   text-align: center;
-  color: #fff;
-  background-color: #82B3D3;
-  border: 1px solid #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border: 1px solid #82b3d3;
   border-radius: 0 4px 4px 0;
   text-decoration: none;
   text-transform: uppercase;
@@ -1566,16 +1570,16 @@ body {
 }
 
 .footer-subscription-button:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .footer-subscription-button:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   outline: none;
 }
 
 .footer-subscription-button:focus-visible {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   outline: none;
 }
 
@@ -1626,20 +1630,20 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-  fill: #83B3D3;
+  fill: #83b3d3;
 }
 
 .footer-social-link:hover .footer-social-icon {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .footer-social-link:focus .footer-social-icon {
-  fill: #68A2CA;
+  fill: #68a2ca;
   outline: none;
 }
 
 .footer-social-link:focus-visible .footer-social-icon {
-  fill: #68A2CA;
+  fill: #68a2ca;
   outline: none;
 }
 
@@ -1654,7 +1658,7 @@ body {
 }
 
 .footer-company-phone {
-  color: #000;
+  color: #000000;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -1693,7 +1697,7 @@ body {
 }
 
 .htmlacademy-icon {
-  fill: #000;
+  fill: #000000;
 }
 
 .htmlacademy-icon:hover {
@@ -1717,7 +1721,7 @@ body {
 /* Catalog footer */
 .footer-subscription-title-black,
 .footer-subscription-description-black {
-  color: #000;
+  color: #000000;
 }
 
 
@@ -1753,7 +1757,7 @@ body {
   position: relative;
   margin: auto;
   padding: 64px 70px;
-  background-color: #FFF;
+  background-color: #ffffff;
   box-sizing: border-box;
   width: 717px;
   box-shadow: 0 25px 50px rgb(0 0 0 / 15%);
@@ -1767,9 +1771,9 @@ body {
   right: 53px;
   width: 14px;
   height: 14px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 50%;
-  border-color: #F2F2F2;
+  border-color: #f2f2f2;
   cursor: pointer;
   border: none;
 }
@@ -1778,25 +1782,25 @@ body {
   position: absolute;
   top: 19px;
   right: 19px;
-  fill:#000;
+  fill:#000000;
 }
 
 .modal-close-button:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .modal-close-button:focus {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .modal-close-button:focus-visible {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .modal-close-button:active .modal-close-buttonsvg  {
-  fill:#000;
+  fill:#000000;
   opacity: 0.3;
 }
 
@@ -1807,7 +1811,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -1852,11 +1856,11 @@ body {
 }
 
 .error-red {
-  color: #FF5757;
+  color: #ff5757;
 }
 
 .error-black {
-  color: #000;
+  color: #000000;
 }
 
 .modal-field-container {
@@ -1874,7 +1878,7 @@ body {
   padding: 12px 0 12px 20px;
   border: none;
   box-sizing: border-box;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   background-image: url("../images/main/date.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
@@ -1883,30 +1887,30 @@ body {
 }
 
 .modal-field:hover, .modal-square:hover {
-  color: #000;
-  background-color: #E6E6E6;
+  color: #000000;
+  background-color: #e6e6e6;
 }
 
 .modal-field:focus, .modal-square:focus {
-  outline-color: #83B3D3;
+  outline-color: #83b3d3;
 }
 
 .modal-field:focus:where(:not(:placeholder-shown)) {
-  border: 2px solid #000;
+  border: 2px solid #000000;
   outline: none;
 }
 
 .modal-square:focus:where(:not(:placeholder-shown)) {
-  border: 2px solid #000;
+  border: 2px solid #000000;
   outline: none;
 }
 
 .modal-field:focus-visible {
-  outline: 2px solid #000;
+  outline: 2px solid #000000;
 }
 
 .modal-square:focus-visible {
-  outline: 2px solid #000;
+  outline: 2px solid #000000;
 }
 
 .field-group {
@@ -1945,12 +1949,12 @@ body {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-  color: #000;
+  color: #000000;
   margin: 0;
   padding: 14px 10px;
   width: 31px;
   box-sizing: border-box;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   cursor: pointer;
 }
@@ -1968,7 +1972,7 @@ body {
   width: 40px;
   height: 48px;
   display: block;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   cursor: pointer;
   background-position:  center center;
@@ -1999,7 +2003,7 @@ body {
   background-image: url("../images/main/button-minusdark.svg");
   background-repeat: no-repeat;
   background-position:  center center;
-  border: 3px solid #82B3D3;
+  border: 3px solid #82b3d3;
   border-radius: 4px;
   outline: none;
 }
@@ -2008,7 +2012,7 @@ body {
   background-image: url("../images/main/button-minusdark.svg");
   background-repeat: no-repeat;
   background-position:  center center;
-  border: 3px solid #82B3D3;
+  border: 3px solid #82b3d3;
   border-radius: 4px;
   outline: none;
 }
@@ -2017,7 +2021,7 @@ body {
   background-image: url("../images/main/button-plusdark.svg");
   background-repeat: no-repeat;
   background-position:  center center;
-  border: 3px solid #82B3D3;
+  border: 3px solid #82b3d3;
   border-radius: 4px;
   outline: none;
 }
@@ -2026,7 +2030,7 @@ body {
   background-image: url("../images/main/button-plusdark.svg");
   background-repeat: no-repeat;
   background-position:  center center;
-  border: 3px solid #82B3D3;
+  border: 3px solid #82b3d3;
   border-radius: 4px;
   outline: none;
 }
@@ -2048,14 +2052,14 @@ body {
 }
 
 .modal-minus:disabled, .modal-plus:disabled {
-  background-color: #E5E5E5;
-  border-color: #E5E5E5;
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
 }
 
 .modal-button {
   text-align: center;
-  color: #fff;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
   border-radius: 10px;
   border: none;
   text-decoration: none;
@@ -2071,16 +2075,16 @@ body {
 }
 
 .modal-button:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .modal-button:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   outline: none;
 }
 
 .modal-button:focus-visible {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   outline: none;
 }
 
@@ -2089,8 +2093,8 @@ body {
 }
 
 .modal-button:disabled {
-  background-color: #E5E5E5;
-  border-color: #E5E5E5;
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
 }
 
 /* Tooltip */
@@ -2113,16 +2117,16 @@ body {
 }
 
 .tooltip-icon {
-  fill: #83B3D3;
+  fill: #83b3d3;
 }
 
 .tooltip-toggle:hover .tooltip-icon {
-  fill: #3F5E72;
+  fill: #3f5e72;
 }
 
 .tooltip-text {
-  background-color: #333;
-  color: #fff;
+  background-color: #333333;
+  color: #ffffff;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
